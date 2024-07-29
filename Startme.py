@@ -14,10 +14,17 @@ from logging.handlers import RotatingFileHandler
 logger = logging.getLogger(__name__)
 
 ###### Please configure the client by entering the settings below ##########
-XML_INPUT_DIRECTORY = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/tmp_Badii_FDC_xml/'
-FILE_DOWNLOAD_CLIENT_HOME = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/'
-Log_OUTPUT = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/logs/'
-JAVA_PATH='C:/apps/java/java17/bin/'
+XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/configs/'
+FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
+Log_OUTPUT = 'D:/git/Parallel-fdc/logs/'
+JAVA_PATH='D:/Apps/Java/jdk-17/jdk-17.0.7/bin/'
+
+
+#XML_INPUT_DIRECTORY = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/tmp_Badii_FDC_xml/'
+#FILE_DOWNLOAD_CLIENT_HOME = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/'
+#Log_OUTPUT = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/logs/'
+#JAVA_PATH='C:/apps/java/java17/bin/'
+
 ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
 STATUS_CHECK_INTERVAL=5
@@ -29,7 +36,6 @@ waitTimeBeforeClose=30
 ################################################
 
 
-lst = [(2, 2),  (4, 4), (5, 5),(6,6),(3, 3),]
 result = []
 
 def sendMail(cfg):
@@ -53,7 +59,7 @@ def collect_result(configFileName):
                 break;
         textfile.close()
         
-    return result.append(configFileName, action)
+    return result.append((configFileName, action))
 
 def mulX(x, y):
     print(f"start process {x} - {y}")
@@ -104,10 +110,13 @@ def runClient(configFileName):
 # Apply Async
 def main():
     fdcMnglogPath = os.path.join(Log_OUTPUT, "fdc_manager", datetime.now().strftime('fdcMng_%H_%M_%d_%m_%Y.log'))
-
-    logging.basicConfig(filename=fdcMnglogPath, encoding="utf-8", filemode="a", level=logging.debug, format="{asctime} - {levelname} - {message}", style="{", datefmt="%Y-%m-%d %H:%M")
+    print('fdcanager log file path:  {} \n'.format(fdcMnglogPath))
+    
+    logName= datetime.now().strftime('fdcMng_%H_%M_%d_%m_%Y.log')
+    
+    logging.basicConfig(filename= logName, encoding="utf-8", filemode="a", level=logging.DEBUG, format="{asctime} - {levelname} - {message}", style="{", datefmt="%Y-%m-%d %H:%M")
             
-    handler = RotatingFileHandler(path, maxBytes=20, backupCount=5)
+    handler = RotatingFileHandler(logName, maxBytes=20, backupCount=5)
     logger.addHandler(handler)
     
     result_f = ''
@@ -117,11 +126,11 @@ def main():
     
     for filename in os.listdir(XML_INPUT_DIRECTORY):
         f = os.path.join(XML_INPUT_DIRECTORY, filename)
-    # checking if it is a file
-    if os.path.isfile(f):
-        print('>> Startet FDC-Client mit der Konfigdatei:  {} \n'.format(f))
-        result_f = pool.apply_async(runClient, args=(filename), callback=collect_result)
-        result_final.append(result_f)
+        # checking if it is a file
+        if os.path.isfile(f):
+            print('>> Startet FDC-Client mit der Konfigdatei:  {} \n'.format(f))
+            result_f = pool.apply_async(runClient, args=(filename), callback=collect_result)
+            result_final.append(result_f)
     
     #for x,y in lst:
     #    result_f = pool.apply_async(mulX, args=(x,y), callback=collect_result)
