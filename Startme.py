@@ -6,7 +6,7 @@ lst = [(2, 2),  (4, 4), (5, 5),(6,6),(3, 3),]
 result = []
 
 def collect_result(val):
-    # print(f"writing result {val}")
+    print(f"writing result {val}")
     return result.append(val)
 
 def mulX(x, y):
@@ -28,10 +28,18 @@ def test_apply_async():
          result_final.append(result_f)
 
     pool.close()
-    for f_res in result_final:
-        r = f_res.get(timeout=10)
-        print(r)
+    
+    # wait that all subropresses are finished
+    pool.join()
+    
+    print(f"Print results")
+    # for f_res in result_final:
+    #    r = f_res.get(timeout=10)
+    #    print(r)
 
+    for r in result:
+        print(r)
+        
 if __name__ == '__main__':
     start = datetime.now()
     test_apply_async()
