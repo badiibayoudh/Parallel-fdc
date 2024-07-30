@@ -2,8 +2,10 @@ import os
 import sys
 import glob
 
+from subprocess import Popen, PIPE
 import subprocess
-from multiprocessing import Pool
+#from multiprocessing import Pool
+from multiprocessing.pool import ThreadPool
 
 from datetime import datetime
 import time
@@ -47,13 +49,13 @@ def collect_result(val):
 def runClientInt(configFileName):
     # get config name from the config file name
     configName = os.path.splitext(configFileName)[0]
-    logger.debug('Name der Konfig:  {} \n'.format(configName))
+    logger.debug('Name der Konfig:  {}'.format(configName))
     
     product = configName.split('_')[1]
-    logger.debug('Name der Baureihe:  {} \n'.format(product))
+    logger.debug('Name der Baureihe:  {}'.format(product))
     
     logFilePath = os.path.join(Log_OUTPUT, product, configName)
-    logger.debug('Path der Logdatei:  {} \n'.format(logFilePath))
+    logger.debug('Path der Logdatei:  {}'.format(logFilePath))
     
     myenv = os.environ.copy()
     myenv['LOG_FILE_PATH'] = logFilePath
@@ -78,16 +80,27 @@ def runClientInt(configFileName):
     
     # C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%
     command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs]
-    logger.info("Befehl wird durchgeführt: {}".format(command))
+    logger.info("Befehl wird durchgefuhrt: {}".format(command))
     
     try:
-        subprocess.run(command, env=myenv, check=True, capture_output=True)
+        complPr = subprocess.run(command, env=myenv, check=True, capture_output=False)
+        print(complPr.returncode)
+        
+        #subprocess.run(command, env=myenv, check=True, capture_output=True)
+        #subprocess.Popen(command, env=myenv, check=True, capture_output=True)
+        #print('...')
+        
+        #process = Popen(command, env=myenv)
+        #retCode = process.wait()
+        #print(retCode)
+        #stdout, stderr = process.communicate()
+
     except:
          logger.error("Befehl hat nicht funktioniert: {}".format(command))
          return (configFileName, ERROR)
     
     ## check result
-    
+
     logFile = getLatestLog(logFilePath) #os.path.join(logFilePath, configName+".log")
     logger.debug('Das letzte Logdatei :  {} \n'.format(logFile))
     action = "Success"
@@ -96,8 +109,8 @@ def runClientInt(configFileName):
             for l_no, line in enumerate(fp):
                 if 'FailedException' in line or 'Caused by:' in line:
                     logger.error('Fin Fehler in mit der Konfigdatei {} laufende FDC: {} \n'.format(configFileName, line))
-                    logger.debug('Zeilenumer:', l_no)
-                    logger.debug('Zeile:', line)
+                    logger.debug('Zeilenumer: {}'.format( l_no))
+                    logger.debug('Zeile: {}'.format( line))
                     sendMail(configFileName, logFile)
                     action = "error"
                     # don't look for next lines
@@ -108,10 +121,10 @@ def runClientInt(configFileName):
 
 def runClient(configFileName):
     try:
-        logger.info('>> Start einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
+        logger.info('>> Start einer Instanz von FDC-Client mit der Konfigdatei: {}\n'.format(configFileName))
         return runClientInt(configFileName)
     except:
-        logger.error('Fehler in FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
+        logger.error('Fehler in FDC-Client mit der Konfigdatei: {}'.format(configFileName))
         return (configFileName, ERROR)
     finally:
         logger.info('<< Ende einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
@@ -128,7 +141,7 @@ def main():
     result_f = ''
     result_final=[]
 
-    pool = Pool(processes=MAX_Processes)
+    pool = ThreadPool(processes=MAX_Processes)
     
     for filename in os.listdir(XML_INPUT_DIRECTORY):
         f = os.path.join(XML_INPUT_DIRECTORY, filename)
@@ -157,6 +170,7 @@ def printConfig():
     logger.info('  - JAVA_PATH: {}'.format(JAVA_PATH))
     logger.info('  - USERPID: {}'.format(USERPID))
     logger.info('  - MAX_Processes: {}'.format(MAX_Processes))
+    logger.info('\n')
  
 def initLog():
     fdcMnglogDir = os.path.join(Log_OUTPUT, "fdc_manager")
@@ -166,7 +180,7 @@ def initLog():
     logger.debug('fdcManager log file path:  {} \n'.format(fdcMnglogFile))
     
     # format the log entries
-    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(threadName)s %(message)s')
     handler = TimedRotatingFileHandler(fdcMnglogFile, 
                                    when= 'D', atTime= datetime(2024, 7, 30, 10, 8) , #'midnight',
                                    backupCount=21)
