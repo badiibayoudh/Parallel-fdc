@@ -1,0 +1,13 @@
+2024-07-30 11:19:37,137 INFO 
+
+2024-07-30 11:19:37,138 INFO ############################################
+2024-07-30 11:19:37,138 INFO # Startzeit: 2024-07-30 11:19:37.137321
+2024-07-30 11:19:37,138 INFO ############################################
+
+2024-07-30 11:19:37,138 INFO Konfiguration:
+2024-07-30 11:19:37,139 INFO   - XML_INPUT_DIRECTORY: D:/git/Parallel-fdc/configs/
+2024-07-30 11:19:37,139 INFO   - FILE_DOWNLOAD_CLIENT_HOME: D:/git/Parallel-fdc/
+2024-07-30 11:19:37,139 INFO   - Log_OUTPUT: D:/git/Parallel-fdc/logs/
+2024-07-30 11:19:37,139 INFO   - JAVA_PATH: D:/Apps/Java/jdk-17/jdk-17.0.7/bin/
+2024-07-30 11:19:37,139 INFO   - USERPID: pid5457
+2024-07-30 11:19:37,139 INFO   - MAX_Processes: 5

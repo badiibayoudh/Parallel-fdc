@@ -1,19 +1,17 @@
 import os
-import subprocess
 import sys
+import glob
+
+import subprocess
+from multiprocessing import Pool
 
 from datetime import datetime
-from multiprocessing import Pool
 import time
 
-import re
-
 import logging
-from logging.handlers import RotatingFileHandler
+from logging.handlers import TimedRotatingFileHandler
 
-logger = logging.getLogger(__name__)
-
-###### Please configure the client by entering the settings below ##########
+###### Please configure the client by entering the settings below.. ##########
 XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/configs/'
 FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
 Log_OUTPUT = 'D:/git/Parallel-fdc/logs/'
@@ -32,54 +30,30 @@ STATUS_CHECK_INTERVAL=5
 MAX_Processes=5
 waitTimeBeforeClose=30
 
-# Thanks
-################################################
+# Thanks.
+################################################################################
 
-
+ERROR='error'
 result = []
+logger = logging.getLogger('app')
 
-def sendMail(cfg):
-    print("Mail sent ..")
+def sendMail(cfg, logFile):
+    logger.info("Mail sent ..")
 
-def collect_result(configFileName):
-    configName = os.path.splitext(configFileName)[0]
-    product = configName.split('_')[2]
-    logFile = os.path.join(Log_OUTPUT, product, configName, configName, ".log")
-    action = "Success"
-    if os.path.exists(logFile):
-        textfile = open(logFile, 'r')
-        matches = []
-        reg = re.compile("(<(\d{4,5})>)?")
-        for line in textfile:
-            errFound = reg.findall(line)
-            if errFound:
-                print('Error with FDC running with config {}: {} \n'.format(configFileName, errFound))
-                sendMail(configFileName)
-                action = "error"
-                break;
-        textfile.close()
-        
-    return result.append((configFileName, action))
+# Collect the returned result when running the client
+def collect_result(val):
+    return result.append(val)
 
-def mulX(x, y):
-    print(f"start process {x} - {y}")
-    time.sleep(3)
-    print(f"end process {x} - {y}")
-    res = x * y
-    res_ap = (x, y, res)
-    return res_ap
-
-def runClient(configFileName):
+def runClientInt(configFileName):
     # get config name from the config file name
     configName = os.path.splitext(configFileName)[0]
-    print('Name der Konfig:  {} \n'.format(configName))
+    logger.debug('Name der Konfig:  {} \n'.format(configName))
     
-    product = configName.split('_')[2]
-    print('Name der Baureihe:  {} \n'.format(product))
-    
+    product = configName.split('_')[1]
+    logger.debug('Name der Baureihe:  {} \n'.format(product))
     
     logFilePath = os.path.join(Log_OUTPUT, product, configName)
-    print('log file path:  {} \n'.format(logFilePath))
+    logger.debug('Path der Logdatei:  {} \n'.format(logFilePath))
     
     myenv = os.environ.copy()
     myenv['LOG_FILE_PATH'] = logFilePath
@@ -96,28 +70,60 @@ def runClient(configFileName):
 
     credentialsPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
     configFilePath =  os.path.join(XML_INPUT_DIRECTORY, configFileName)
-    downloadArgs ='--encryptedCredLocation="' + credentialsPath + '"' + '--inputFileLocation="' + configFilePath +'"'
-    print('downloadArgs:  {} \n'.format(downloadArgs))
+    downloadArgs ='--encryptedCredLocation="' + credentialsPath + '"' + ' --inputFileLocation="' + configFilePath +'"'
+    logger.info('downloadArgs:  {} \n'.format(downloadArgs))
     
     javaCmd = os.path.join(JAVA_PATH, 'java')
     fdcClientPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v6_26_06_2024.jar')
     
     # C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%
     command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs]
+    logger.info("Befehl wird durchgeführt: {}".format(command))
     
-    subprocess.run(command, env=myenv, check=True, capture_output=True)
+    try:
+        subprocess.run(command, env=myenv, check=True, capture_output=True)
+    except:
+         logger.error("Befehl hat nicht funktioniert: {}".format(command))
+         return (configFileName, ERROR)
+    
+    ## check result
+    
+    logFile = getLatestLog(logFilePath) #os.path.join(logFilePath, configName+".log")
+    logger.debug('Das letzte Logdatei :  {} \n'.format(logFile))
+    action = "Success"
+    if os.path.exists(logFile):
+        with open(logFile, 'r') as fp:
+            for l_no, line in enumerate(fp):
+                if 'FailedException' in line or 'Caused by:' in line:
+                    logger.error('Fin Fehler in mit der Konfigdatei {} laufende FDC: {} \n'.format(configFileName, line))
+                    logger.debug('Zeilenumer:', l_no)
+                    logger.debug('Zeile:', line)
+                    sendMail(configFileName, logFile)
+                    action = "error"
+                    # don't look for next lines
+                    break
+    
+    return (configFileName, action)
 
-# Apply Async
+
+def runClient(configFileName):
+    try:
+        logger.info('>> Start einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
+        return runClientInt(configFileName)
+    except:
+        logger.error('Fehler in FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
+        return (configFileName, ERROR)
+    finally:
+        logger.info('<< Ende einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
+
+
+def getLatestLog(logFolder):
+    logPattern = os.path.join(logFolder, '*')
+    list_of_files = glob.glob(logPattern) # * means all if need specific format then *.csv
+    latest_file = max(list_of_files, key=os.path.getctime)
+    return latest_file
+
 def main():
-    fdcMnglogPath = os.path.join(Log_OUTPUT, "fdc_manager", datetime.now().strftime('fdcMng_%H_%M_%d_%m_%Y.log'))
-    print('fdcanager log file path:  {} \n'.format(fdcMnglogPath))
-    
-    logName= datetime.now().strftime('fdcMng_%H_%M_%d_%m_%Y.log')
-    
-    logging.basicConfig(filename= logName, encoding="utf-8", filemode="a", level=logging.DEBUG, format="{asctime} - {levelname} - {message}", style="{", datefmt="%Y-%m-%d %H:%M")
-            
-    handler = RotatingFileHandler(logName, maxBytes=20, backupCount=5)
-    logger.addHandler(handler)
     
     result_f = ''
     result_final=[]
@@ -128,29 +134,65 @@ def main():
         f = os.path.join(XML_INPUT_DIRECTORY, filename)
         # checking if it is a file
         if os.path.isfile(f):
-            print('>> Startet FDC-Client mit der Konfigdatei:  {} \n'.format(f))
-            result_f = pool.apply_async(runClient, args=(filename), callback=collect_result)
+            result_f = pool.apply_async(runClient, args=(filename,), callback=collect_result)
             result_final.append(result_f)
-    
-    #for x,y in lst:
-    #    result_f = pool.apply_async(mulX, args=(x,y), callback=collect_result)
-    #    result_final.append(result_f)
 
     pool.close()
-    
     # wait that all subropresses are finished
     pool.join()
     
-    print(f"Ergebniszusammenfassung:")
+    logger.info("############################################")
+    logger.info(f"# Report:")
     # for f_res in result_final:
     #    r = f_res.get(timeout=10)
     #    print(r)
-
     for r in result:
-        print(r)
+        logger.info(r)
 
-        
+def printConfig():
+    logger.info('Konfiguration:')
+    logger.info('  - XML_INPUT_DIRECTORY: {}'.format(XML_INPUT_DIRECTORY))
+    logger.info('  - FILE_DOWNLOAD_CLIENT_HOME: {}'.format(FILE_DOWNLOAD_CLIENT_HOME))
+    logger.info('  - Log_OUTPUT: {}'.format(Log_OUTPUT))
+    logger.info('  - JAVA_PATH: {}'.format(JAVA_PATH))
+    logger.info('  - USERPID: {}'.format(USERPID))
+    logger.info('  - MAX_Processes: {}'.format(MAX_Processes))
+ 
+def initLog():
+    fdcMnglogDir = os.path.join(Log_OUTPUT, "fdc_manager")
+    if not os.path.exists(fdcMnglogDir):
+        os.makedirs(fdcMnglogDir)
+    fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager_log'))
+    logger.debug('fdcManager log file path:  {} \n'.format(fdcMnglogFile))
+    
+    # format the log entries
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+    handler = TimedRotatingFileHandler(fdcMnglogFile, 
+                                   when= 'D', atTime= datetime(2024, 7, 30, 10, 8) , #'midnight',
+                                   backupCount=21)
+    handler.setFormatter(formatter)
+    
+    logger.addHandler(handler)
+    logger.setLevel(logging.DEBUG)
+            
 if __name__ == '__main__':
-    start = datetime.now()
+    # 1 Initialize log
+    initLog()
+    
+    startTime = datetime.now()
+    logger.info("\n")
+    logger.info("############################################")
+    logger.info("# Startzeit: {}".format(startTime))
+    logger.info("############################################\n")
+    
+    # 2 Print configuration
+    printConfig()
+    
+    # 3 process ..
     main()
-    print("End Time Apply Async:", (datetime.now() - start).total_seconds())
+    
+    endTime = datetime.now()
+    
+    logger.info("# Endzeit: {}".format(endTime))
+    logger.info("# Das Herunterladen dauerte:" + str((endTime - startTime).total_seconds()))
+    logger.info("############################################\n")
