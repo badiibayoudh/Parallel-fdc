@@ -13,27 +13,7 @@ import time
 import logging
 from logging.handlers import TimedRotatingFileHandler
 
-###### Please configure the client by entering the settings below.. ##########
-XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/configs/'
-FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
-Log_OUTPUT = 'D:/git/Parallel-fdc/logs/'
-JAVA_PATH='D:/Apps/Java/jdk-17/jdk-17.0.7/bin/'
-
-
-#XML_INPUT_DIRECTORY = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/tmp_Badii_FDC_xml/'
-#FILE_DOWNLOAD_CLIENT_HOME = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/'
-#Log_OUTPUT = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/logs/'
-#JAVA_PATH='C:/apps/java/java17/bin/'
-
-ENVIRONMENT_TO_CONNECT='PROD'
-USERPID='pid5457'
-STATUS_CHECK_INTERVAL=5
-
-MAX_Processes=5
-waitTimeBeforeClose=30
-
-# Thanks.
-################################################################################
+import config
 
 ERROR='error'
 result = []
@@ -54,7 +34,7 @@ def runClientInt(configFileName):
     product = configName.split('_')[1]
     logger.debug('Name der Baureihe:  {}'.format(product))
     
-    logFilePath = os.path.join(Log_OUTPUT, product, configName)
+    logFilePath = os.path.join(config.Log_OUTPUT, product, configName)
     logger.debug('Path der Logdatei:  {}'.format(logFilePath))
     
     myenv = os.environ.copy()
@@ -62,28 +42,32 @@ def runClientInt(configFileName):
     myenv['LOGGING_FILE_NAME'] = configName
     myenv['FDC_RUN_STATUS_PATH'] = logFilePath
     
-    myenv['ENVIRONMENT_TO_CONNECT'] = ENVIRONMENT_TO_CONNECT
-    myenv['USERPID'] = USERPID
+    myenv['ENVIRONMENT_TO_CONNECT'] = config.ENVIRONMENT_TO_CONNECT
+    myenv['USERPID'] = config.USERPID
     
-    myenv['FILE_DOWNLOAD_CLIENT_HOME'] = FILE_DOWNLOAD_CLIENT_HOME
+    myenv['FILE_DOWNLOAD_CLIENT_HOME'] = config.FILE_DOWNLOAD_CLIENT_HOME
 
     if not os.path.exists(logFilePath):
         os.makedirs(logFilePath)
 
-    credentialsPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
-    configFilePath =  os.path.join(XML_INPUT_DIRECTORY, configFileName)
-    downloadArgs ='--encryptedCredLocation="' + credentialsPath + '"' + ' --inputFileLocation="' + configFilePath +'"'
-    logger.info('downloadArgs:  {} \n'.format(downloadArgs))
+    credentialsPath = config.CREDENTIALS_PATH #os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
+    configFilePath =  os.path.join(config.XML_INPUT_DIRECTORY, configFileName)
+    downloadArgs1 ="--encryptedCredLocation='" + credentialsPath + "'" 
+    downloadArgs2 ="--inputFileLocation='" + configFilePath + "'"
+    logger.info('downloadArgs:  {} , {} \n'.format(downloadArgs1, downloadArgs2))
     
-    javaCmd = os.path.join(JAVA_PATH, 'java')
-    fdcClientPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v6_26_06_2024.jar')
+    javaCmd = os.path.join(config.JAVA_PATH, 'java')
+    fdcClientPath = os.path.join(config.FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v6_26_06_2024.jar')
     
     # C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%
-    command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs]
+    command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
+    
+    #command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2, credentialsPath, downloadArgs2]
+    
     logger.info("Befehl wird durchgefuhrt: {}".format(command))
     
     try:
-        complPr = subprocess.run(command, env=myenv, check=True, capture_output=False)
+        complPr = subprocess.run(command, env=myenv, check=True)
         print(complPr.returncode)
         
         #subprocess.run(command, env=myenv, check=True, capture_output=True)
@@ -96,7 +80,7 @@ def runClientInt(configFileName):
         #stdout, stderr = process.communicate()
 
     except:
-         logger.error("Befehl hat nicht funktioniert: {}".format(command))
+         logger.exception("Befehl hat nicht funktioniert: {}".format(command))
          return (configFileName, ERROR)
     
     ## check result
@@ -124,7 +108,7 @@ def runClient(configFileName):
         logger.info('>> Start einer Instanz von FDC-Client mit der Konfigdatei: {}\n'.format(configFileName))
         return runClientInt(configFileName)
     except:
-        logger.error('Fehler in FDC-Client mit der Konfigdatei: {}'.format(configFileName))
+        logger.exception('Fehler in FDC-Client mit der Konfigdatei: {}'.format(configFileName))
         return (configFileName, ERROR)
     finally:
         logger.info('<< Ende einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
@@ -141,10 +125,10 @@ def main():
     result_f = ''
     result_final=[]
 
-    pool = ThreadPool(processes=MAX_Processes)
+    pool = ThreadPool(processes=config.MAX_Processes)
     
-    for filename in os.listdir(XML_INPUT_DIRECTORY):
-        f = os.path.join(XML_INPUT_DIRECTORY, filename)
+    for filename in os.listdir(config.XML_INPUT_DIRECTORY):
+        f = os.path.join(config.XML_INPUT_DIRECTORY, filename)
         # checking if it is a file
         if os.path.isfile(f):
             result_f = pool.apply_async(runClient, args=(filename,), callback=collect_result)
@@ -164,16 +148,16 @@ def main():
 
 def printConfig():
     logger.info('Konfiguration:')
-    logger.info('  - XML_INPUT_DIRECTORY: {}'.format(XML_INPUT_DIRECTORY))
-    logger.info('  - FILE_DOWNLOAD_CLIENT_HOME: {}'.format(FILE_DOWNLOAD_CLIENT_HOME))
-    logger.info('  - Log_OUTPUT: {}'.format(Log_OUTPUT))
-    logger.info('  - JAVA_PATH: {}'.format(JAVA_PATH))
-    logger.info('  - USERPID: {}'.format(USERPID))
-    logger.info('  - MAX_Processes: {}'.format(MAX_Processes))
+    logger.info('  - XML_INPUT_DIRECTORY: {}'.format(config.XML_INPUT_DIRECTORY))
+    logger.info('  - FILE_DOWNLOAD_CLIENT_HOME: {}'.format(config.FILE_DOWNLOAD_CLIENT_HOME))
+    logger.info('  - Log_OUTPUT: {}'.format(config.Log_OUTPUT))
+    logger.info('  - JAVA_PATH: {}'.format(config.JAVA_PATH))
+    logger.info('  - USERPID: {}'.format(config.USERPID))
+    logger.info('  - MAX_Processes: {}'.format(config.MAX_Processes))
     logger.info('\n')
  
 def initLog():
-    fdcMnglogDir = os.path.join(Log_OUTPUT, "fdc_manager")
+    fdcMnglogDir = os.path.join(config.Log_OUTPUT, "fdc_manager")
     if not os.path.exists(fdcMnglogDir):
         os.makedirs(fdcMnglogDir)
     fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager_log'))
