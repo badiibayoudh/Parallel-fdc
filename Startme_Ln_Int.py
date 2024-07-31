@@ -15,11 +15,11 @@ from logging.handlers import TimedRotatingFileHandler
 
 ###### Please configure the client by entering the settings below.. ##########
 
-XML_INPUT_DIRECTORY = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/configs/'
-FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc'
+XML_INPUT_DIRECTORY = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/configsInt/'
+FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/'
 Log_OUTPUT = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/logs/'
-#JAVA_PATH='D:/Apps/Java/jdk-17/jdk-17.0.7/bin/'
-
+JAVA_PATH='/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/java/jdk-17.0.11/bin/'
+CREDENTIALS = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/EncryptedCred_INT.txt'
 
 #XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/configs/'
 #FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
@@ -32,7 +32,7 @@ Log_OUTPUT = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/logs/'
 #Log_OUTPUT = 'C:/ASPLM/FileDownloadClient/test/FDC-Konfigs/logs/'
 #JAVA_PATH='C:/apps/java/java17/bin/'
 
-ENVIRONMENT_TO_CONNECT='PROD'
+ENVIRONMENT_TO_CONNECT='TI'
 USERPID='pid5457'
 STATUS_CHECK_INTERVAL=5
 
@@ -77,21 +77,22 @@ def runClientInt(configFileName):
     if not os.path.exists(logFilePath):
         os.makedirs(logFilePath)
 
-    credentialsPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
-    configFilePath =  os.path.join(XML_INPUT_DIRECTORY, configFileName)
-    downloadArgs ='--encryptedCredLocation="' + credentialsPath + '"' + ' --inputFileLocation="' + configFilePath +'"'
-    logger.info('downloadArgs:  {} \n'.format(downloadArgs))
+    credentialsPath = CREDENTIALS #os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
+    configFilePath = os.path.join(XML_INPUT_DIRECTORY, configFileName)
+    #downloadArgs ='--encryptedCredLocation="' + credentialsPath + '"' + ' --inputFileLocation="' + configFilePath +'"'
+    downloadArgs1 ="--encryptedCredLocation=" + credentialsPath 
+    downloadArgs2 ="--inputFileLocation=" + configFilePath
+    #logger.info('downloadArgs:  {} \n'.format(downloadArgs))
     
-    #javaCmd = os.path.join(JAVA_PATH, 'java')
-    javaCmd = 'java'
+    javaCmd = os.path.join(JAVA_PATH, 'java')
     fdcClientPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v6_26_06_2024.jar')
     
     # C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%
-    command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs]
+    command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
     logger.info("Befehl wird durchgefuhrt: {}".format(command))
     
     try:
-        complPr = subprocess.run(command, env=myenv, check=True, capture_output=False)
+        complPr = subprocess.run(command, env=myenv, check=True)
         print(complPr.returncode)
         
         #subprocess.run(command, env=myenv, check=True, capture_output=True)
@@ -104,8 +105,8 @@ def runClientInt(configFileName):
         #stdout, stderr = process.communicate()
 
     except:
-         logger.error("Befehl hat nicht funktioniert: {}".format(command))
-         return (configFileName, ERROR)
+        logger.exception("Befehl hat nicht funktioniert: {}".format(command))
+        return (configFileName, ERROR)
     
     ## check result
 
@@ -132,7 +133,7 @@ def runClient(configFileName):
         logger.info('>> Start einer Instanz von FDC-Client mit der Konfigdatei: {}\n'.format(configFileName))
         return runClientInt(configFileName)
     except:
-        logger.error('Fehler in FDC-Client mit der Konfigdatei: {}'.format(configFileName))
+        logger.exception('Fehler in FDC-Client mit der Konfigdatei: {}'.format(configFileName))
         return (configFileName, ERROR)
     finally:
         logger.info('<< Ende einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
