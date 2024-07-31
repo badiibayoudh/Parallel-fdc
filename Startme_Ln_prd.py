@@ -19,7 +19,7 @@ XML_INPUT_DIRECTORY = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fd
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/'
 Log_OUTPUT = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/logs/'
 JAVA_PATH='/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/java/jdk-17.0.11/bin/'
-
+CREDENTIALS='/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/EncryptedCred_PROD.txt'
 
 #XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/configs/'
 #FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
@@ -77,7 +77,7 @@ def runClientInt(configFileName):
     if not os.path.exists(logFilePath):
         os.makedirs(logFilePath)
 
-    credentialsPath = os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
+    credentialsPath = CREDENTIALS
     configFilePath =  os.path.join(XML_INPUT_DIRECTORY, configFileName)
     #downloadArgs ='--encryptedCredLocation="' + credentialsPath + '"' + ' --inputFileLocation="' + configFilePath +'"'
     downloadArgs1 ="--encryptedCredLocation=" + credentialsPath 
