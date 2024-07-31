@@ -59,10 +59,7 @@ def runClientInt(configFileName):
     javaCmd = os.path.join(config.JAVA_PATH, 'java')
     fdcClientPath = os.path.join(config.FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v6_26_06_2024.jar')
     
-    # C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%
     command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
-    
-    #command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2, credentialsPath, downloadArgs2]
     
     logger.info("Befehl wird durchgefuhrt: {}".format(command))
     
@@ -81,7 +78,7 @@ def runClientInt(configFileName):
 
     except:
          logger.exception("Befehl hat nicht funktioniert: {}".format(command))
-         return (configFileName, ERROR)
+         ###return (configFileName, ERROR)
     
     ## check result
 
@@ -98,7 +95,20 @@ def runClientInt(configFileName):
                     sendMail(configFileName, logFile)
                     action = "error"
                     # don't look for next lines
-                    break
+                    ###return (configFileName, action)
+    
+    
+    # move plmxml
+    # Annahme: plmml hat same name as the configuration file
+    plmxmlfileName=configName+'.plmxml'
+    plmxmlfileFrom= os.path.join(config.Move_PLMXML_FROM, plmxmlfileName)
+    if os.path.exists(plmxmlfileFrom):
+        productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
+        if not os.path.exists(productTo):
+             os.makedirs(productTo)
+        plmxmlfileTo= os.path.join(productTo, plmxmlfileName)
+        os.replace(plmxmlfileFrom, plmxmlfileTo)
+        logger.info('Move plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
     
     return (configFileName, action)
 
