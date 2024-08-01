@@ -55,7 +55,7 @@ waitTimeBeforeClose=30
 """
 # ASPLM-INT gegen Smaragd-PRD
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
-XML_INPUT_DIRECTORY = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/configs/'
+XML_INPUT_DIRECTORY = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/configsPrd/'
 Log_OUTPUT = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/logs/'
 JAVA_PATH='/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/java/jdk-17.0.11/bin/'
 CREDENTIALS='/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/EncryptedCred_PROD.txt'
