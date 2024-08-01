@@ -1,8 +1,0 @@
-#This is a configuration file for naming non Catia files in SMD 4.7.0 onwards
-#Object|Pattern|Prefix|Attribute|Suffix|Right Alligned?|StartingPoint|Length|Column in file name
-PART       |           | |PartNumber        | | | 1|21| 1
-PART       |           | |Revision          | | | 1| 4|22
-PART       |           | |Sequence          | |Y| 1| 2|26
-FILE       |           | |DataItemDesc      | | | 1|30|28
-FILE       |           | |j0OriginalFileName| | | 1|30|58
-FILE       |           | |Sequence          | |Y| 1| 3|88

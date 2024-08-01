@@ -1,0 +1,11 @@
+# SPP Modellname
+#Object|Pattern|Prefix|Attribute|Suffix|Right Alligned?|StartingPoint|Length|Column in model name
+PART       |           | |PartNumber        | | | 1|21| 1
+PART       |           | |Revision          | | | 1| 4|22
+PART       |           | |Sequence          | |Y| 1| 3|26
+UCODE      |           | |                  | | | 1| 3|29
+PART       |           | |Nomenclature      | | | 1|28|32
+PART       |           | |j0ZGSNumber       | | | 1| 4|60
+FOLDER     |           | |j0DocumentType    | | | 1| 1|64
+MODEL      |           | |Sequence          | |Y| 1| 3|65
+MODEL      |           | |j0CTModNumber     | |Y| 1| 3|68

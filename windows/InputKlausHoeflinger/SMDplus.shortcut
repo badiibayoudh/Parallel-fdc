@@ -1,0 +1,29 @@
+#This file contains shortcuts for various attributes to be used for naming models in SMD 4.3
+#Attribute Name    | Value          | Code
+#-----------------------------------------
+LifeCycleState     | LcsWorking     | W
+LifeCycleState     | j0LcsEng       | E
+LifeCycleState     | LcsReleased    | R
+j0DocumentType     | j0BTBP         | T
+j0DocumentType     | j0V5BTBP       | V
+j0DocumentType     | j0BTBS         | S
+j0DocumentType     | j0BRBP         | R
+j0DocumentType     | j0BRBS         | K
+j0DocumentType     | j0BTBPA        | A
+j0DocumentType     | j0BTBE         | D
+j0DocumentType     | j0BTBA         | G
+j0DocumentType     | j0ENG          | E
+j0DocumentType     | j0NDF          | X
+j0DocumentType     | j0PP           | P
+j0DocumentType     | j0FPLAN        | F
+j0DocumentType     | j0FDOK         | O
+j0DocumentType     | j0FNCD         | N
+j0DocumentType     | j0FQSD         | Q
+j0DataItemProcType | j03D           | S
+j0DataItemProcType | j0DRAW         | D
+j0DataItemProcType | j032D          | M
+j0DataItemProcType | SPEC           | C
+j0DataItemProcType | EE             | E
+j0PackagingState   | j0Waiting      | B
+j0PackagingState   | j0ProcOK       | G
+j0PackagingState   | j0ProcNotOK    | R
