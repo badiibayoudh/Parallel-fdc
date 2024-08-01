@@ -5,11 +5,11 @@ REM generate credentials-Datei
 
 
 REM Please change the paths below ..
-set "XML_INPUT_DIRECTORY=C:\ASPLM\FileDownloadClient\test\FDC-Konfigs\tmp_Badii_FDC_xml\"
-set "FILE_DOWNLOAD_CLIENT_HOME=C:\ASPLM\FileDownloadClient\test\FDC-Konfigs\"
-set "Log_OUTPUT=C:\ASPLM\FileDownloadClient\test\FDC-Konfigs\logs\"
+set "XML_INPUT_DIRECTORY=C:\git\Parallel-fdc\windows\configInt\"
+set "FILE_DOWNLOAD_CLIENT_HOME=C:\git\Parallel-fdc\"
+set "Log_OUTPUT=C:\git\Parallel-fdc\logs\"
 REM set "maxProc=28"
-set "maxProc=5"
+set "maxProc=7"
 set "waitTimeBeforeClose=30"
 REM Thanks ..
 

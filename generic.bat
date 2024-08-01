@@ -12,10 +12,12 @@ rem replace <CHANGEME_ENVIRONMENT_TO_CONNECT> with TI, TI2 or PROD
 rem replace <CHANGEME_INPUT_FILE_NAME> with INPUT_XML
 
 rem Technical User PID which is used to launch FDC 
-set USERPID=pid5457  
+rem set USERPID=pid5457  
+set USERPID=pid1489
 
 rem possible values for ENVIRONMENT_TO_CONNECT  : TI, TI2
-set ENVIRONMENT_TO_CONNECT=PROD
+rem set ENVIRONMENT_TO_CONNECT=PROD
+set ENVIRONMENT_TO_CONNECT=TI
 
 rem PATH D:\FileDownloadclient\FileDownloadClient_Armin\jdk-11.0.2\bin;!PATH!
 rem set PATH=%PATH%;C:\Windows\System32\WindowsPowerShell\v1.0
@@ -57,7 +59,8 @@ GOTO Execute
 
 :Execute
 echo "Mode: %MODE%"
-set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_PROD.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
+rem set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_PRD.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
+set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_INT.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
 
 echo "Download args: %DOWNLOAD_ARGS%"
 
