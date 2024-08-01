@@ -14,6 +14,8 @@ from logging.handlers import TimedRotatingFileHandler
 
 import config
 
+import shutil
+
 ERROR='error'
 result = []
 logger = logging.getLogger('app')
@@ -79,28 +81,32 @@ def runClientInt(configFileName):
     if os.path.exists(logFile):
         with open(logFile, 'r') as fp:
             for l_no, line in enumerate(fp):
-                if 'FailedException' in line or 'Caused by:' in line:
-                    logger.error('Fin Fehler in mit der Konfigdatei {} laufende FDC: {} \n'.format(configFileName, line))
+                if 'FailedException' in line:
+                    logger.error('Ein Fehler in mit der Konfigdatei {} laufende FDC. Zeile in log: {} \n'.format(configFileName, line))
                     logger.debug('Zeilenumer: {}'.format( l_no))
                     logger.debug('Zeile: {}'.format( line))
                     sendMail(configFileName, logFile)
-                    action = "error"
                     # don't look for next lines
-                    return (configFileName, action)
-    
+                    return (configFileName, ERROR)
     
     # Move plmxml in order to be imported
     # Annahme: plmml has same name as the configuration file
-    if config.MOVE_PLMXML:
+    if config.COPY_PLMXML:
         plmxmlfileName=configName+'.plmxml'
         plmxmlfileFrom= os.path.join(config.Move_PLMXML_FROM, plmxmlfileName)
         if os.path.exists(plmxmlfileFrom):
-            productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
-            if not os.path.exists(productTo):
-                os.makedirs(productTo)
-            plmxmlfileTo= os.path.join(productTo, plmxmlfileName)
-            os.replace(plmxmlfileFrom, plmxmlfileTo)
-            logger.info('Move plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
+            #productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
+            #if not os.path.exists(productTo):
+            #    os.makedirs(productTo)
+            try:
+                plmxmlfileTo= os.path.join(config.Move_PLMXML_TO, plmxmlfileName)
+                plmxmlfileToTemp= os.path.join(config.Move_PLMXML_TO, plmxmlfileName + "_tmp")
+                shutil.copy2(plmxmlfileFrom, plmxmlfileToTemp)
+            
+                os.replace(plmxmlfileToTemp, plmxmlfileTo)
+                logger.info('Copy plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
+            except:
+                return (configFileName, ERROR)
     
     return (configFileName, action)
 
@@ -123,7 +129,6 @@ def getLatestLog(logFolder):
     return latest_file
 
 def main():
-    
     result_f = ''
     result_final=[]
 

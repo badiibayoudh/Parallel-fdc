@@ -1,8 +1,10 @@
 
 ###### Please configure the client by entering the settings below.. ##########
+# lokal windows gegen Smaragd-PRD (nur für Test)
+
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=5
-MOVE_PLMXML=False
+COPY_PLMXML=False
 
 XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/windows/configsPrd/'
 FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
@@ -11,12 +13,13 @@ JAVA_PATH='D:/Apps/Java/jdk-17/jdk-17.0.7/bin/'
 CREDENTIALS_PATH='D:/git/Parallel-fdc/EncryptedCred_PROD.txt'
 Move_PLMXML_FROM='D:/git/Parallel-fdc/test/plmxml_fdc'
 Move_PLMXML_TO='D:/git/Parallel-fdc/test/plmxml'
+COPY_PLMXML=True
 ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
 
 
 """
-# T3 gegen CRM
+# ASPLM-T3 gegen Smaragd-CRM
 XML_INPUT_DIRECTORY = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/configsInt/'
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/'
 Log_OUTPUT = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/logs/'
@@ -35,7 +38,7 @@ waitTimeBeforeClose=30
 
 
 """
-# T3 gegen PRD
+# ASPLM-T3 gegen Smaragd-PRD
 XML_INPUT_DIRECTORY = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/configs/'
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/'
 Log_OUTPUT = '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/logs/'
@@ -50,7 +53,7 @@ waitTimeBeforeClose=30
 """
 
 """
-# INT gegen PRD
+# ASPLM-INT gegen Smaragd-PRD
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
 XML_INPUT_DIRECTORY = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/configs/'
 Log_OUTPUT = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/logs/'
@@ -59,7 +62,7 @@ CREDENTIALS='/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/Encrypt
 
 Move_PLMXML_FROM='/mounts/import/cdm/VISVIEW/AS-PLM_fdc/'
 Move_PLMXML_TO='/mounts/import/cdm/VISVIEW/AS-PLM/'
-MOVE_PLMXML=False
+COPY_PLMXML=False
 
 ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
