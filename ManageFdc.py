@@ -4,7 +4,6 @@ import glob
 
 from subprocess import Popen, PIPE
 import subprocess
-#from multiprocessing import Pool
 from multiprocessing.pool import ThreadPool
 
 from datetime import datetime
@@ -20,14 +19,15 @@ result = []
 logger = logging.getLogger('app')
 
 def sendMail(cfg, logFile):
-    logger.info("Mail sent ..")
+    logger.debug("Mail sent .. (not implemented yet)")
+    # TO BE DONE AS SOON AS POSSIBLE
 
 # Collect the returned result when running the client
 def collect_result(val):
     return result.append(val)
 
 def runClientInt(configFileName):
-    # get config name from the config file name
+    # Get config name from the config file name
     configName = os.path.splitext(configFileName)[0]
     logger.debug('Name der Konfig:  {}'.format(configName))
     
@@ -46,11 +46,12 @@ def runClientInt(configFileName):
     myenv['USERPID'] = config.USERPID
     
     myenv['FILE_DOWNLOAD_CLIENT_HOME'] = config.FILE_DOWNLOAD_CLIENT_HOME
+    myenv['STATUS_CHECK_INTERVAL'] = config.STATUS_CHECK_INTERVAL
 
     if not os.path.exists(logFilePath):
         os.makedirs(logFilePath)
 
-    credentialsPath = config.CREDENTIALS_PATH #os.path.join(FILE_DOWNLOAD_CLIENT_HOME, 'EncryptedCred_PROD.txt')
+    credentialsPath = config.CREDENTIALS_PATH
     configFilePath =  os.path.join(config.XML_INPUT_DIRECTORY, configFileName)
     downloadArgs1 ="--encryptedCredLocation='" + credentialsPath + "'" 
     downloadArgs2 ="--inputFileLocation='" + configFilePath + "'"
@@ -66,23 +67,13 @@ def runClientInt(configFileName):
     try:
         complPr = subprocess.run(command, env=myenv, check=True)
         print(complPr.returncode)
-        
-        #subprocess.run(command, env=myenv, check=True, capture_output=True)
-        #subprocess.Popen(command, env=myenv, check=True, capture_output=True)
-        #print('...')
-        
-        #process = Popen(command, env=myenv)
-        #retCode = process.wait()
-        #print(retCode)
-        #stdout, stderr = process.communicate()
 
     except:
          logger.exception("Befehl hat nicht funktioniert: {}".format(command))
-         ###return (configFileName, ERROR)
+         return (configFileName, ERROR)
     
     ## check result
-
-    logFile = getLatestLog(logFilePath) #os.path.join(logFilePath, configName+".log")
+    logFile = getLatestLog(logFilePath)
     logger.debug('Das letzte Logdatei :  {} \n'.format(logFile))
     action = "Success"
     if os.path.exists(logFile):
@@ -95,20 +86,21 @@ def runClientInt(configFileName):
                     sendMail(configFileName, logFile)
                     action = "error"
                     # don't look for next lines
-                    ###return (configFileName, action)
+                    return (configFileName, action)
     
     
-    # move plmxml
-    # Annahme: plmml hat same name as the configuration file
-    plmxmlfileName=configName+'.plmxml'
-    plmxmlfileFrom= os.path.join(config.Move_PLMXML_FROM, plmxmlfileName)
-    if os.path.exists(plmxmlfileFrom):
-        productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
-        if not os.path.exists(productTo):
-             os.makedirs(productTo)
-        plmxmlfileTo= os.path.join(productTo, plmxmlfileName)
-        os.replace(plmxmlfileFrom, plmxmlfileTo)
-        logger.info('Move plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
+    # Move plmxml in order to be imported
+    # Annahme: plmml has same name as the configuration file
+    if config.MOVE_PLMXML:
+        plmxmlfileName=configName+'.plmxml'
+        plmxmlfileFrom= os.path.join(config.Move_PLMXML_FROM, plmxmlfileName)
+        if os.path.exists(plmxmlfileFrom):
+            productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
+            if not os.path.exists(productTo):
+                os.makedirs(productTo)
+            plmxmlfileTo= os.path.join(productTo, plmxmlfileName)
+            os.replace(plmxmlfileFrom, plmxmlfileTo)
+            logger.info('Move plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
     
     return (configFileName, action)
 
