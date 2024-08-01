@@ -49,6 +49,7 @@ MAX_Processes=5
 waitTimeBeforeClose=30    
 """
 
+"""
 # INT gegen PRD
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
 XML_INPUT_DIRECTORY = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/configs/'
@@ -64,7 +65,7 @@ ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=5
-
+"""
 
 # Thanks.
 ################################################################################
