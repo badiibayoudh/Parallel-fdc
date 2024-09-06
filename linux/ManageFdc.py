@@ -53,7 +53,7 @@ def runClientInt(configFileName):
     if not os.path.exists(logFilePath):
         os.makedirs(logFilePath)
 
-    credentialsPath = config.CREDENTIALS_PATH
+    credentialsPath = config.CREDENTIALS
     configFilePath =  os.path.join(config.XML_INPUT_DIRECTORY, configFileName)
     downloadArgs1 ="--encryptedCredLocation='" + credentialsPath + "'" 
     downloadArgs2 ="--inputFileLocation='" + configFilePath + "'"
