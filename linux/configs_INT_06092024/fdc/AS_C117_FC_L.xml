@@ -2,24 +2,24 @@
 <DOWNLOAD_CLIENT_INPUT id="1"> 
 	<BATCH_PARAMS>
 		<GENERAL_PARAMS>
-			<SMD_XPPATH_PREFIX>E:\FileDownloadclient</SMD_XPPATH_PREFIX>
+			<SMD_XPPATH_PREFIX>/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/</SMD_XPPATH_PREFIX>
 			<SMD_CHECK_TIMESTAMP>TRUE</SMD_CHECK_TIMESTAMP>				
 			<PROJECT>P_C412_MCG</PROJECT>
 		</GENERAL_PARAMS>
 		<COMMON_PARAMS>			
 			<STRUCTURE_CONFIG>
-				<SMD_PLMXML_CFG>\InputKlausHoeflinger\AS-PLM.xml</SMD_PLMXML_CFG>						
+				<SMD_PLMXML_CFG>/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml</SMD_PLMXML_CFG>						
 			</STRUCTURE_CONFIG>
 			<FILE_NAMING_CONFIG>
-				<SMD_MODEL_CFG_FILE>\InputKlausHoeflinger\SMDplus.modelname</SMD_MODEL_CFG_FILE>
-				<SMD_SHORTCUT_FILE>\InputKlausHoeflinger\SMDplus.shortcut</SMD_SHORTCUT_FILE>
-				<SMD_NONCATIA_CFG_FILE>\InputKlausHoeflinger\SMDplus.modelname2</SMD_NONCATIA_CFG_FILE>
+				<SMD_MODEL_CFG_FILE>/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname</SMD_MODEL_CFG_FILE>
+				<SMD_SHORTCUT_FILE>/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut</SMD_SHORTCUT_FILE>
+				<SMD_NONCATIA_CFG_FILE>/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2</SMD_NONCATIA_CFG_FILE>
                 <PROJECT_SUBDIRS>TRUE</PROJECT_SUBDIRS>
 			</FILE_NAMING_CONFIG>
 			<DOWNLOAD_PATH_CONFIG>
-				<DOWNLOAD_MAP>\Output</DOWNLOAD_MAP>
-				<DOWNLOAD_DIR type="JT" message="true">\Output\jt</DOWNLOAD_DIR>
-				<FILEPATH_STRUCTURE>\Output\plmxml\AS_C117_FC_L</FILEPATH_STRUCTURE>
+				<DOWNLOAD_MAP>/mounts/import/cdm/VISVIEW/MAP_fdc</DOWNLOAD_MAP>
+				<DOWNLOAD_DIR type="JT" message="true">/mounts/import/cdm/geo/jt</DOWNLOAD_DIR>
+				<FILEPATH_STRUCTURE>/mounts/import/cdm/VISVIEW/AS-PLM</FILEPATH_STRUCTURE>
 			</DOWNLOAD_PATH_CONFIG>
 			<PREFERENCE_COLLECTION>
 				<MAX_LEVEL_OF_EXPANSION>2000</MAX_LEVEL_OF_EXPANSION>
