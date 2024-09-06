@@ -1,3 +1,13 @@
+#############################################################
+# Orchestration of FileDownloadClient (FDC)
+#############################################################
+# History
+# -----------------------------------------------------------
+# 29.07.2024    Badii Bayoudh   Initial Creation
+# 19.08.2024    Juergen Marat   German -> English, Logfile renamed, New Jar fdc_v7_07_08_2024.jar
+#############################################################
+
+
 import os
 import sys
 import glob
@@ -31,95 +41,110 @@ def collect_result(val):
 def runClientInt(configFileName):
     # Get config name from the config file name
     configName = os.path.splitext(configFileName)[0]
-    logger.debug('Name der Konfig:  {}'.format(configName))
+    logger.debug('Name of input config:  {}'.format(configName))
     
     product = configName.split('_')[1]
-    logger.debug('Name der Baureihe:  {}'.format(product))
+    logger.debug('Name of carline or powertrain:  {}'.format(product))
     
     logFilePath = os.path.join(config.Log_OUTPUT, product, configName)
-    logger.debug('Path der Logdatei:  {}'.format(logFilePath))
+    logger.debug('Path log file:  {}'.format(logFilePath))
+    
+    fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
+    logger.debug('Path FDC User log file:  {}'.format(fdcLogFilePath))
     
     myenv = os.environ.copy()
     myenv['LOG_FILE_PATH'] = logFilePath
     myenv['LOGGING_FILE_NAME'] = configName
     myenv['FDC_RUN_STATUS_PATH'] = logFilePath
+    myenv['USER_LOG_PATH'] = fdcLogFilePath
     
     myenv['ENVIRONMENT_TO_CONNECT'] = config.ENVIRONMENT_TO_CONNECT
     myenv['USERPID'] = config.USERPID
     
     myenv['FILE_DOWNLOAD_CLIENT_HOME'] = config.FILE_DOWNLOAD_CLIENT_HOME
-    myenv['STATUS_CHECK_INTERVAL'] = config.STATUS_CHECK_INTERVAL
+    myenv['STATUS_CHECK_INTERVAL'] = str(config.STATUS_CHECK_INTERVAL)
 
     if not os.path.exists(logFilePath):
         os.makedirs(logFilePath)
 
     credentialsPath = config.CREDENTIALS
     configFilePath =  os.path.join(config.XML_INPUT_DIRECTORY, configFileName)
-    downloadArgs1 ="--encryptedCredLocation='" + credentialsPath + "'" 
-    downloadArgs2 ="--inputFileLocation='" + configFilePath + "'"
+    downloadArgs1 ='--encryptedCredLocation=' + credentialsPath
+    downloadArgs2 ='--inputFileLocation=' + configFilePath
     logger.info('downloadArgs:  {} , {} \n'.format(downloadArgs1, downloadArgs2))
     
     javaCmd = os.path.join(config.JAVA_PATH, 'java')
-    fdcClientPath = os.path.join(config.FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v6_26_06_2024.jar')
+    fdcClientPath = os.path.join(config.FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v7_07_08_2024.jar')
     
     command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
     
-    logger.info("Befehl wird durchgefuhrt: {}".format(command))
+    #command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
+    # command = ['/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/java/jdk-17.0.11/bin/javax', '-Dfile.encoding=UTF-8', '-jar', '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/fdc_v6_26_06_2024x.jar', 'download_mode', '--encryptedCredLocation=/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/secure/EncryptedCred_PRODx.txt', '--inputFileLocation=/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/configsPrd/AS_C223_FV_L_FDCx.xml']
+    #command = ['ls']
+    logger.info("Execute command: {}".format(command))
     
     try:
         complPr = subprocess.run(command, env=myenv, check=True)
         print(complPr.returncode)
 
     except:
-         logger.exception("Befehl hat nicht funktioniert: {}".format(command))
+         logger.exception("Exception while calling command: {}".format(command))
          return (configFileName, ERROR)
     
     ## check result
     logFile = getLatestLog(logFilePath)
-    logger.debug('Das letzte Logdatei :  {} \n'.format(logFile))
+    logger.debug('Last log file :  {} \n'.format(logFile))
     action = "Success"
     if os.path.exists(logFile):
         with open(logFile, 'r') as fp:
             for l_no, line in enumerate(fp):
-                if 'FailedException' in line:
-                    logger.error('Ein Fehler in mit der Konfigdatei {} laufende FDC. Zeile in log: {} \n'.format(configFileName, line))
-                    logger.debug('Zeilenumer: {}'.format( l_no))
-                    logger.debug('Zeile: {}'.format( line))
+                if 'FailedException' in line or 'Caused by:' in line:
+                    logger.error('Failed exception in input config {} within FDC: {} \n'.format(configFileName, line))
+                    logger.debug('Line Number: {}'.format( l_no))
+                    logger.debug('Line: {}'.format( line))
                     sendMail(configFileName, logFile)
+                    action = "error"
                     # don't look for next lines
-                    return (configFileName, ERROR)
+                    return (configFileName, action)
+    
     
     # Move plmxml in order to be imported
     # Annahme: plmml has same name as the configuration file
-    if config.COPY_PLMXML:
+    if config.MOVE_PLMXML:
         plmxmlfileName=configName+'.plmxml'
         plmxmlfileFrom= os.path.join(config.Move_PLMXML_FROM, plmxmlfileName)
         if os.path.exists(plmxmlfileFrom):
-            #productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
-            #if not os.path.exists(productTo):
-            #    os.makedirs(productTo)
-            try:
-                plmxmlfileTo= os.path.join(config.Move_PLMXML_TO, plmxmlfileName)
-                plmxmlfileToTemp= os.path.join(config.Move_PLMXML_TO, plmxmlfileName + "_tmp")
-                shutil.copy2(plmxmlfileFrom, plmxmlfileToTemp)
+            productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
+            if not os.path.exists(productTo):
+                os.makedirs(productTo)
+              
+            # 1. copy from source to sub dir (archive)
+            plmxmlfileToArchive= os.path.join(productTo, plmxmlfileName)
+            shutil.copy2(plmxmlfileFrom, plmxmlfileToArchive)
+            logger.info('[Transfer step 1] Copy plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileToArchive))
             
-                os.replace(plmxmlfileToTemp, plmxmlfileTo)
-                logger.info('Copy plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
-            except:
-                return (configFileName, ERROR)
+            # 2. copy from sub dir to to temp file
+            plmxmlfileToTemp= os.path.join(config.Move_PLMXML_TO, plmxmlfileName + "_tmp")
+            shutil.copy2(plmxmlfileToArchive, plmxmlfileToArchive)
+            logger.info('[Transfer step 2] Copy plmxml from: {} to: {}]'.format( plmxmlfileToArchive, plmxmlfileToTemp))
+            
+            # 3. rename temporary file
+            plmxmlfileTo= os.path.join(config.Move_PLMXML_TO, plmxmlfileName)
+            os.replace(plmxmlfileToTemp, plmxmlfileTo)
+            logger.info('[Transfer step 3] Rename plmxml from: {} to: {}]'.format( plmxmlfileToTemp, plmxmlfileTo))
     
     return (configFileName, action)
 
 
 def runClient(configFileName):
     try:
-        logger.info('>> Start einer Instanz von FDC-Client mit der Konfigdatei: {}\n'.format(configFileName))
+        logger.info('>> Start of instance of FDC-Client with input config: {}\n'.format(configFileName))
         return runClientInt(configFileName)
     except:
-        logger.exception('Fehler in FDC-Client mit der Konfigdatei: {}'.format(configFileName))
+        logger.exception('Error in FDC-Client with input config: {}'.format(configFileName))
         return (configFileName, ERROR)
     finally:
-        logger.info('<< Ende einer Instanz von FDC-Client mit der Konfigdatei: {} \n'.format(configFileName))
+        logger.info('<< End of instance of FDC-Client with input config: {} \n'.format(configFileName))
 
 
 def getLatestLog(logFolder):
@@ -129,6 +154,7 @@ def getLatestLog(logFolder):
     return latest_file
 
 def main():
+    
     result_f = ''
     result_final=[]
 
@@ -167,8 +193,8 @@ def initLog():
     fdcMnglogDir = os.path.join(config.Log_OUTPUT, "fdc_manager")
     if not os.path.exists(fdcMnglogDir):
         os.makedirs(fdcMnglogDir)
-    fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager_log'))
-    logger.debug('fdcManager log file path:  {} \n'.format(fdcMnglogFile))
+    fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager.log'))
+    logger.debug('FDC-Manager log file path:  {} \n'.format(fdcMnglogFile))
     
     # format the log entries
     formatter = logging.Formatter('%(asctime)s %(levelname)s %(threadName)s %(message)s')
@@ -187,7 +213,7 @@ if __name__ == '__main__':
     startTime = datetime.now()
     logger.info("\n")
     logger.info("############################################")
-    logger.info("# Startzeit: {}".format(startTime))
+    logger.info("# START: {}".format(startTime))
     logger.info("############################################\n")
     
     # 2 Print configuration
@@ -198,6 +224,6 @@ if __name__ == '__main__':
     
     endTime = datetime.now()
     
-    logger.info("# Endzeit: {}".format(endTime))
-    logger.info("# Das Herunterladen dauerte:" + str((endTime - startTime).total_seconds()))
+    logger.info("# END: {}".format(endTime))
+    logger.info("# Download took time:" + str((endTime - startTime).total_seconds()))
     logger.info("############################################\n")
