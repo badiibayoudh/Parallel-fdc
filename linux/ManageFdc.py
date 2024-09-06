@@ -5,6 +5,7 @@
 # -----------------------------------------------------------
 # 29.07.2024    Badii Bayoudh   Initial Creation
 # 19.08.2024    Juergen Marat   German -> English, Logfile renamed, New Jar fdc_v7_07_08_2024.jar
+# 06.09.2024    Adjust copy of plxml file + set the env variable for  FDC user log file path
 #############################################################
 
 
