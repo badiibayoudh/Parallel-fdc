@@ -108,31 +108,25 @@ def runClientInt(configFileName):
                     # don't look for next lines
                     return (configFileName, action)
     
-    
+
     # Move plmxml in order to be imported
     # Annahme: plmml has same name as the configuration file
     if config.MOVE_PLMXML:
         plmxmlfileName=configName+'.plmxml'
         plmxmlfileFrom= os.path.join(config.Move_PLMXML_FROM, plmxmlfileName)
         if os.path.exists(plmxmlfileFrom):
-            productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
-            if not os.path.exists(productTo):
-                os.makedirs(productTo)
-              
-            # 1. copy from source to sub dir (archive)
-            plmxmlfileToArchive= os.path.join(productTo, plmxmlfileName)
-            shutil.copy2(plmxmlfileFrom, plmxmlfileToArchive)
-            logger.info('[Transfer step 1] Copy plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileToArchive))
+            #productTo= os.path.join(config.Move_PLMXML_TO, 'fdc_'+product)
+            #if not os.path.exists(productTo):
+            #    os.makedirs(productTo)
+            try:
+                plmxmlfileTo= os.path.join(config.Move_PLMXML_TO, plmxmlfileName)
+                plmxmlfileToTemp= os.path.join(config.Move_PLMXML_TO, plmxmlfileName + "_tmp")
+                shutil.copy2(plmxmlfileFrom, plmxmlfileToTemp)
             
-            # 2. copy from sub dir to to temp file
-            plmxmlfileToTemp= os.path.join(config.Move_PLMXML_TO, plmxmlfileName + "_tmp")
-            shutil.copy2(plmxmlfileToArchive, plmxmlfileToArchive)
-            logger.info('[Transfer step 2] Copy plmxml from: {} to: {}]'.format( plmxmlfileToArchive, plmxmlfileToTemp))
-            
-            # 3. rename temporary file
-            plmxmlfileTo= os.path.join(config.Move_PLMXML_TO, plmxmlfileName)
-            os.replace(plmxmlfileToTemp, plmxmlfileTo)
-            logger.info('[Transfer step 3] Rename plmxml from: {} to: {}]'.format( plmxmlfileToTemp, plmxmlfileTo))
+                os.replace(plmxmlfileToTemp, plmxmlfileTo)
+                logger.info('Copy plmxml from: {} to: {}]'.format( plmxmlfileFrom, plmxmlfileTo))
+            except:
+                return (configFileName, ERROR)
     
     return (configFileName, action)
 
