@@ -1,9 +1,5 @@
 
 ###### Please configure the client by entering the settings below.. ##########
-"""
-STATUS_CHECK_INTERVAL=5
-MAX_Processes=5
-MOVE_PLMXML=False
 
 XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/windows/configsPrd/'
 FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
@@ -14,7 +10,11 @@ Move_PLMXML_FROM='D:/git/Parallel-fdc/test/plmxml_fdc'
 Move_PLMXML_TO='D:/git/Parallel-fdc/test/plmxml'
 ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
-"""
+
+STATUS_CHECK_INTERVAL=5
+MAX_Processes=5
+MOVE_PLMXML=False
+
 
 """
 # T3 gegen CRM
@@ -50,6 +50,7 @@ MAX_Processes=5
 waitTimeBeforeClose=30    
 """
 
+"""
 # INT gegen PRD
 FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
 XML_INPUT_DIRECTORY = '/applications/local/config/fdc/'
@@ -65,7 +66,7 @@ ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=5
-
+"""
 
 # Thanks.
 ################################################################################
