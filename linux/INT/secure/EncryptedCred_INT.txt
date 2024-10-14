@@ -1,0 +1,3 @@
+clientId=t0RV3jgOZM8Hemn/QNeC1ma6d9duF8VLJLo/57TPCey0jG6Awp+htbvJq314C+XM
+clientSecret=CO18i1Yebj38khkK0wDe1yxFprEtbGaPAh0e3cLe9fTre26Xp8DAIvXdOHeGsm2yhmxHRgIrfkw7N1u14wot1gHIhMILGrg7Ib0TcHFrlQc=
+xApiKey=0Nt1fPHOlRQ/XiSBB/dOs4wD5rb2KhTLDBsJaQNvS9I39++z8ceSLJ9fVvyRxdSS

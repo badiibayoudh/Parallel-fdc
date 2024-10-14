@@ -16,8 +16,8 @@ set USERPID=pid5457
 rem set USERPID=pid1489
 
 rem possible values for ENVIRONMENT_TO_CONNECT  : TI, TI2
+rem set ENVIRONMENT_TO_CONNECT=PRD
 set ENVIRONMENT_TO_CONNECT=PROD
-rem set ENVIRONMENT_TO_CONNECT=TI
 
 rem PATH D:\FileDownloadclient\FileDownloadClient_Armin\jdk-11.0.2\bin;!PATH!
 rem set PATH=%PATH%;C:\Windows\System32\WindowsPowerShell\v1.0
@@ -59,8 +59,10 @@ GOTO Execute
 
 :Execute
 echo "Mode: %MODE%"
-rem set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_PRD.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
-set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_INT.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
+
+rem set DOWNLOAD_ARGS=--encryptedCredLocation="C:\fdc\EncryptedCred_PROD.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
+set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_PROD.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
+rem set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\EncryptedCred_INT.txt" --inputFileLocation="%XML_INPUT_DIRECTORY%%configFileName%"
 
 echo "Download args: %DOWNLOAD_ARGS%"
 

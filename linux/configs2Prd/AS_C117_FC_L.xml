@@ -17,8 +17,8 @@
                 <PROJECT_SUBDIRS>TRUE</PROJECT_SUBDIRS>
 			</FILE_NAMING_CONFIG>
 			<DOWNLOAD_PATH_CONFIG>
-				<DOWNLOAD_MAP>/mounts/import/cdm/geo/jt_fdc/map_fdc</DOWNLOAD_MAP>
-				<DOWNLOAD_DIR type="JT" message="true">/mounts/import/cdm/geo/jt_fdc</DOWNLOAD_DIR>
+				<DOWNLOAD_MAP>/mounts/import/cdm/VISVIEW/MAP_fdc</DOWNLOAD_MAP>
+				<DOWNLOAD_DIR type="JT" message="true">/mounts/import/cdm/geo/jt</DOWNLOAD_DIR>
 				<FILEPATH_STRUCTURE>/mounts/import/cdm/VISVIEW/AS-PLM_fdc</FILEPATH_STRUCTURE>
 			</DOWNLOAD_PATH_CONFIG>
 			<PREFERENCE_COLLECTION>
