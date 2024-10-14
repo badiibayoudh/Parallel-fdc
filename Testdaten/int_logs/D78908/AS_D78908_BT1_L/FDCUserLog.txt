@@ -1,0 +1,1818 @@
+File Download Client wird um 09-07-2024 18:00:17 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+File Download Client wird um 09-07-2024 18:00:26 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:00:08:129 benötigt wird
+ File Download Client wird um 09-08-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:882
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:532
+Handles nach der Entfernung von Duplikaten: 359
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-08-2024 18:05:51 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:31:077 benötigt wird
+ File Download Client wird um 09-09-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:608
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:257
+Handles nach der Entfernung von Duplikaten: 359
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:00:812
+File Download Client wird um 09-09-2024 18:05:56 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:37:404 benötigt wird
+ File Download Client wird um 09-10-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:012
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:455
+Handles nach der Entfernung von Duplikaten: 359
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-10-2024 18:05:52 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:32:857 benötigt wird
+ File Download Client wird um 09-11-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:637
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:358
+Handles nach der Entfernung von Duplikaten: 359
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-11-2024 18:05:53 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:33:107 benötigt wird
+ File Download Client wird um 09-12-2024 16:51:16 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+File Download Client wird um 09-12-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Ausnahme beim Bericht im PLMXML-Format
+File Download Client wird um 09-12-2024 18:05:31 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:12:049 benötigt wird
+ File Download Client wird um 09-13-2024 12:52:59 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:156
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:474
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 412 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:34:815
+File Download Client wird um 09-13-2024 12:59:11 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:12:505 benötigt wird
+ File Download Client wird um 09-13-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:868
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:336
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-13-2024 18:06:21 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:01:349 benötigt wird
+ File Download Client wird um 09-14-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Fehler beim Speichern der Strukturkonfiguration
+File Download Client wird um 09-14-2024 18:00:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:00:10:385 benötigt wird
+ File Download Client wird um 09-15-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:836
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:702
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-15-2024 18:06:21 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:02:608 benötigt wird
+ File Download Client wird um 09-16-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:764
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:392
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-16-2024 18:06:21 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:02:185 benötigt wird
+ File Download Client wird um 09-17-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:942
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:375
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:596
+File Download Client wird um 09-17-2024 18:06:25 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:04:374 benötigt wird
+ File Download Client wird um 09-18-2024 18:00:21 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:840
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:509
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-18-2024 18:06:37 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:16:747 benötigt wird
+ File Download Client wird um 09-19-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:159
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:510
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 14 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:02:984
+File Download Client wird um 09-19-2024 18:06:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:08:829 benötigt wird
+ File Download Client wird um 09-20-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:740
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:569
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-20-2024 18:06:18 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:00:282 benötigt wird
+ File Download Client wird um 09-21-2024 18:00:17 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:621
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:429
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-21-2024 18:06:09 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:52:354 benötigt wird
+ File Download Client wird um 09-22-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:985
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:340
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-22-2024 18:06:11 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:51:054 benötigt wird
+ File Download Client wird um 09-23-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:899
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:743
+Handles nach der Entfernung von Duplikaten: 783
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-23-2024 18:06:12 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:53:725 benötigt wird
+ File Download Client wird um 09-24-2024 18:00:16 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:716
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:380
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:03:122
+File Download Client wird um 09-24-2024 18:06:07 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:50:968 benötigt wird
+ File Download Client wird um 09-25-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:941
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:357
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-25-2024 18:06:18 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:58:654 benötigt wird
+ File Download Client wird um 09-26-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:888
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:788
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-26-2024 18:06:17 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:57:931 benötigt wird
+ File Download Client wird um 09-27-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:866
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:337
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-27-2024 18:06:11 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:51:913 benötigt wird
+ File Download Client wird um 09-28-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:631
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:342
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-28-2024 18:06:09 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:50:220 benötigt wird
+ File Download Client wird um 09-29-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:872
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:458
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-29-2024 18:06:14 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:55:940 benötigt wird
+ File Download Client wird um 09-30-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:238
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:396
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-30-2024 18:06:27 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:06:07:790 benötigt wird
+ File Download Client wird um 10-01-2024 12:01:58 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D78908_BT1_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_HV-Batterie            
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D78908_BT1_L          
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D78908_BT1_L          
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D78908}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:00:604
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:404
+Handles nach der Entfernung von Duplikaten: 780
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 10-01-2024 12:17:45 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:15:47:342 benötigt wird
+ 
