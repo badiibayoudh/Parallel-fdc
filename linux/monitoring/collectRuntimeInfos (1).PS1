@@ -101,9 +101,9 @@ function addJobToHash{
 
 
 
-$FDC_LOG_ROOT_DIR = "E:\FileDownloadclient\Output\logs"
-$FDC_RUNTIME_CSV = "E:\FileDownloadclient\Output\logs\FDC-Runtime.csv"
-$FDC_RUNNING_JOB_COUNT_CSV = "E:\FileDownloadclient\Output\logs\FDC-RunningJobCount.csv"
+$FDC_LOG_ROOT_DIR = "D:\git\Parallel-fdc\Testdaten\int_logs"
+$FDC_RUNTIME_CSV = "D:\git\Parallel-fdc\Testdaten\FDC-Runtime.csv"
+$FDC_RUNNING_JOB_COUNT_CSV = "D:\git\Parallel-fdc\Testdaten\FDC-RunningJobCount.csv"
 
 # collect all log infos and create a csv file with the following columns:
 # JobName;StartTime;ReportCreationTime;ModelDownloadCompleteTime;JTCountToDownload;EndTime
