@@ -29,6 +29,7 @@ import shutil
 
 ERROR='error'
 result = []
+result_retry = []
 logger = logging.getLogger('app')
 
 def sendMail(cfg, logFile):
@@ -39,19 +40,27 @@ def sendMail(cfg, logFile):
 def collect_result(val):
     return result.append(val)
 
+# Collect the returned retry result when running the client
+def collect_result_retry(val):
+    return result_retry.append(val)
+
 def runClientInt(configFileName):
     # Get config name from the config file name
     configName = os.path.splitext(configFileName)[0]
-    logger.debug('Name of input config:  {}'.format(configName))
+    logger.debug('Name of input config: {}'.format(configName))
     
     product = configName.split('_')[1]
-    logger.debug('Name of carline or powertrain:  {}'.format(product))
+    logger.debug('Name of carline or powertrain: {}'.format(product))
     
     logFilePath = os.path.join(config.Log_OUTPUT, product, configName)
-    logger.debug('Path log file:  {}'.format(logFilePath))
+    logger.debug('Path log file: {}'.format(logFilePath))
     
     fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
-    logger.debug('Path FDC User log file:  {}'.format(fdcLogFilePath))
+    logger.debug('Path FDC User log file: {}'.format(fdcLogFilePath))
+    
+    if os.path.exists(logFile):
+        os.remove(logFile)
+        logger.info('Log file deleted: {}'.format(fdcLogFilePath))
     
     myenv = os.environ.copy()
     myenv['LOG_FILE_PATH'] = logFilePath
@@ -173,6 +182,33 @@ def main():
     #    print(r)
     for r in result:
         logger.info(r)
+        
+    # Second chance for failed executions
+    result_f = ''
+    result_final=[]
+    pool = ThreadPool(processes=config.MAX_Processes)
+    for r in result:
+        if r[1] != ERROR:
+            continue
+        filename = r[0]
+        logger.info('Retry for the configuration: {} \n'.format(filename))
+        f = os.path.join(config.XML_INPUT_DIRECTORY, filename)
+        # checking if it is a file
+        if os.path.isfile(f):
+            result_f = pool.apply_async(runClient, args=(filename,), callback=collect_result_retry)
+            result_final.append(result_f)
+    
+    pool.close()
+    # wait that all subropresses are finished
+    pool.join()    
+    
+    logger.info("############################################")
+    logger.info("# Report - Retry:")
+    for r in result_retry:
+        logger.info(r)
+        
+        
+        
 
 def printConfig():
     logger.info('Konfiguration:')
