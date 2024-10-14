@@ -75,77 +75,80 @@ FDC_LOG_ROOT_DIR = r"D:\git\Parallel-fdc\Testdaten\logs"
 FDC_RUNTIME_CSV = r"D:\git\Parallel-fdc\Testdaten\FDC-Runtime-new.csv"
 FDC_RUNNING_JOB_COUNT_CSV = r"D:\git\Parallel-fdc\Testdaten\FDC-RunningJobCount-new.csv"
 
-csv_header_line = "JobName;StartTime;ReportReadyTime;UniqueJTCount;JTsToDownloadCount;JTDownloadErrorCount;JTDownloadCompleteTime;EndTime"
-with open(FDC_RUNTIME_CSV, 'w', newline='') as file:
-    file.write(csv_header_line + '\n')
+def generateReport(FDC_LOG_ROOT_DIR, FDC_RUNTIME_CSV, FDC_RUNNING_JOB_COUNT_CSV):
+    csv_header_line = "JobName;StartTime;ReportReadyTime;UniqueJTCount;JTsToDownloadCount;JTDownloadErrorCount;JTDownloadCompleteTime;EndTime"
+    with open(FDC_RUNTIME_CSV, 'w', newline='') as file:
+        file.write(csv_header_line + '\n')
 
-jobs_by_start_time_hash = {}
-jobs_by_end_time_hash = {}
-start_times_by_job_hash = {}
-end_times_by_job_hash = {}
-jobs = []
+    jobs_by_start_time_hash = {}
+    jobs_by_end_time_hash = {}
+    start_times_by_job_hash = {}
+    end_times_by_job_hash = {}
+    jobs = []
 
-for dir_name, _, _ in os.walk(FDC_LOG_ROOT_DIR):
-    job_log_dir = dir_name
-    if os.path.isfile(os.path.join(job_log_dir, "FDCUserLog.txt")):
-        job_name = os.path.basename(job_log_dir)
+    for dir_name, _, _ in os.walk(FDC_LOG_ROOT_DIR):
+        job_log_dir = dir_name
+        if os.path.isfile(os.path.join(job_log_dir, "FDCUserLog.txt")):
+            job_name = os.path.basename(job_log_dir)
 
-        start_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.START"))
-        report_ready_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PLMXML.SUCCESS"))
-        model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.SUCCESS"))
-        if model_download_complete_time == "-":
-            model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.ERROR"))
-        end_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.END"))
+            start_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.START"))
+            report_ready_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PLMXML.SUCCESS"))
+            model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.SUCCESS"))
+            if model_download_complete_time == "-":
+                model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.ERROR"))
+            end_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.END"))
 
-        unique_file_handles = get_unique_file_handles(os.path.join(job_log_dir, "FDCUserLog.txt"))
-        files_to_download = get_file_count_to_download(os.path.join(job_log_dir, "FDCUserLog.txt"))
-        download_error_count = get_download_error_count(os.path.join(job_log_dir, "FDCUserLog.txt"))
+            unique_file_handles = get_unique_file_handles(os.path.join(job_log_dir, "FDCUserLog.txt"))
+            files_to_download = get_file_count_to_download(os.path.join(job_log_dir, "FDCUserLog.txt"))
+            download_error_count = get_download_error_count(os.path.join(job_log_dir, "FDCUserLog.txt"))
 
-        jobs.append(job_name)
-        add_job_to_hash(jobs_by_start_time_hash, start_time_string, job_name)
-        add_job_to_hash(jobs_by_end_time_hash, end_time_string, job_name)
-        start_times_by_job_hash[job_name] = start_time_string
-        end_times_by_job_hash[job_name] = end_time_string
+            jobs.append(job_name)
+            add_job_to_hash(jobs_by_start_time_hash, start_time_string, job_name)
+            add_job_to_hash(jobs_by_end_time_hash, end_time_string, job_name)
+            start_times_by_job_hash[job_name] = start_time_string
+            end_times_by_job_hash[job_name] = end_time_string
 
-        csv_line = f"{job_name};{start_time_string};{report_ready_time};{unique_file_handles};{files_to_download};{download_error_count};{model_download_complete_time};{end_time_string}"
-        print(csv_line)
-        with open(FDC_RUNTIME_CSV, 'a', newline='') as file:
-            file.write(csv_line + '\n')
-    else:
-        print(f"No FDCUserLog.txt found in {job_log_dir} -> Skipping!")
+            csv_line = f"{job_name};{start_time_string};{report_ready_time};{unique_file_handles};{files_to_download};{download_error_count};{model_download_complete_time};{end_time_string}"
+            print(csv_line)
+            with open(FDC_RUNTIME_CSV, 'a', newline='') as file:
+                file.write(csv_line + '\n')
+        else:
+            print(f"No FDCUserLog.txt found in {job_log_dir} -> Skipping!")
 
-running_job_count_hash = {}
-first_start_time = min(jobs_by_start_time_hash.keys())
-print(first_start_time)
+    running_job_count_hash = {}
+    first_start_time = min(jobs_by_start_time_hash.keys())
+    print(first_start_time)
 
-last_end_time = max(jobs_by_end_time_hash.keys())
-print(first_start_time)
+    last_end_time = max(jobs_by_end_time_hash.keys())
+    print(first_start_time)
 
-t = first_start_time
-while t <= last_end_time:
-    running_job_count_hash[t] = []
+    t = first_start_time
+    while t <= last_end_time:
+        running_job_count_hash[t] = []
 
-    for job in jobs:
-        if (start_times_by_job_hash[job] == "-") and (end_times_by_job_hash[job] == "-"):
-            continue
-        elif (start_times_by_job_hash[job] == "-") and is_date(end_times_by_job_hash[job]):
-            continue  # Error case
-        elif is_date(start_times_by_job_hash[job]) and (end_times_by_job_hash[job] == "-"):
-            running_job_count_hash[t].append(job)  # job still running
-        elif (datetime.strptime(start_times_by_job_hash[job], "%d.%m.%Y %H:%M:%S") <= t <=
+        for job in jobs:
+            if (start_times_by_job_hash[job] == "-") and (end_times_by_job_hash[job] == "-"):
+                continue
+            elif (start_times_by_job_hash[job] == "-") and is_date(end_times_by_job_hash[job]):
+                continue  # Error case
+            elif is_date(start_times_by_job_hash[job]) and (end_times_by_job_hash[job] == "-"):
+                running_job_count_hash[t].append(job)  # job still running
+            elif (datetime.strptime(start_times_by_job_hash[job], "%d.%m.%Y %H:%M:%S") <= t <=
               datetime.strptime(end_times_by_job_hash[job], "%d.%m.%Y %H:%M:%S")):
-            running_job_count_hash[t].append(job)
+                running_job_count_hash[t].append(job)
             
-    t = t + timedelta(minutes=1)
+        t = t + timedelta(minutes=1)
+    
+    csv_runtime_header_line = "DateTime;RunningJobCount" 
+    with open(FDC_RUNNING_JOB_COUNT_CSV, 'w', newline='') as file:
+        file.write(csv_runtime_header_line + '\n')
 
-with open(FDC_RUNNING_JOB_COUNT_CSV, 'w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["DateTime", "RunningJobCount"])
+    for t in sorted(running_job_count_hash.keys()):
+        time_string = t.strftime("%d.%m.%Y %H:%M:%S")
+        running_job_count = len(running_job_count_hash[t])
+        csv_line = f"{time_string};{running_job_count}"
+        print(csv_line)
+        with open(FDC_RUNNING_JOB_COUNT_CSV, 'a', newline='') as file:
+            file.write(csv_line + '\n')
 
-for t in sorted(running_job_count_hash.keys()):
-    time_string = t.strftime("%d.%m.%Y %H:%M:%S")
-    running_job_count = len(running_job_count_hash[t])
-    csv_line = f"{time_string};{running_job_count}"
-    print(csv_line)
-    with open(FDC_RUNNING_JOB_COUNT_CSV, 'a', newline='') as file:
-        file.write(csv_line + '\n')
+generateReport(FDC_LOG_ROOT_DIR, FDC_RUNTIME_CSV, FDC_RUNNING_JOB_COUNT_CSV)
