@@ -101,7 +101,7 @@ function addJobToHash{
 
 
 
-$FDC_LOG_ROOT_DIR = "D:\git\Parallel-fdc\Testdaten\int_logs"
+$FDC_LOG_ROOT_DIR = "D:\git\Parallel-fdc\Testdaten\logs"
 $FDC_RUNTIME_CSV = "D:\git\Parallel-fdc\Testdaten\FDC-Runtime.csv"
 $FDC_RUNNING_JOB_COUNT_CSV = "D:\git\Parallel-fdc\Testdaten\FDC-RunningJobCount.csv"
 
