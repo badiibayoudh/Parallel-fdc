@@ -6,6 +6,7 @@
 # 29.07.2024    Badii Bayoudh   Initial Creation
 # 19.08.2024    Juergen Marat   German -> English, Logfile renamed, New Jar fdc_v7_07_08_2024.jar
 # 06.09.2024    Adjust copy of plxml file + set the env variable for  FDC user log file path
+# 17.09.2024    Add Monitoring and retry when error
 #############################################################
 
 
@@ -253,8 +254,8 @@ def main():
 
     logger.info("\n-- Generate monitoring Report:")
     
-    FDC_LOG_ROOT_DIR = r"D:\git\Parallel-fdc\Testdaten\logs"     
-    reporter.generateReport(FDC_LOG_ROOT_DIR, config.FDC_RUNTIME_CSV, config.FDC_RUNNING_JOB_COUNT_CSV) #config.Log_OUTPUT
+
+    reporter.generateReport(config.Log_OUTPUT, config.FDC_RUNTIME_CSV, config.FDC_RUNNING_JOB_COUNT_CSV)
 
 def printConfig():
     logger.info('Konfiguration:')

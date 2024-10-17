@@ -110,7 +110,7 @@ def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV):
             end_times_by_job_hash[job_name] = end_time_string
 
             csv_line = f"{job_name};{start_time_string};{report_ready_time};{unique_file_handles};{files_to_download};{download_error_count};{model_download_complete_time};{end_time_string}"
-            logger.info(csv_line)
+            #logger.info(csv_line)
             with open(FdcRuntimeCSV, 'a', newline='') as file:
                 file.write(csv_line + '\n')
         else:
@@ -145,7 +145,7 @@ def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV):
         time_string = t.strftime("%d.%m.%Y %H:%M:%S")
         running_job_count = len(running_job_count_hash[t])
         csv_line = f"{time_string};{running_job_count}"
-        logger.info(csv_line)
+        #logger.info(csv_line)
         with open(FdcRunningJobCountCSV, 'a', newline='') as file:
             file.write(csv_line + '\n')
 

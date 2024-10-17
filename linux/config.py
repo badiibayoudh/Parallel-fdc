@@ -76,8 +76,8 @@ Move_PLMXML_FROM='/mounts/import/cdm/VISVIEW/AS-PLM_fdc/'
 Move_PLMXML_TO='/mounts/import/cdm/VISVIEW/AS-PLM/'
 MOVE_PLMXML=True
 
-FDC_RUNTIME_CSV = '/applications/logs/fdc/monitoringFDC-Runtime-new.csv'
-FDC_RUNNING_JOB_COUNT_CSV = '/applications/logs/fdc/monitoring/FDC-RunningJobCount-new.csv'
+FDC_RUNTIME_CSV = '/applications/logs/fdc/FDC-Runtime-new.csv'
+FDC_RUNNING_JOB_COUNT_CSV = '/applications/logs/fdc/FDC-RunningJobCount-new.csv'
 
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=15
