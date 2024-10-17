@@ -27,10 +27,13 @@ import config
 
 import shutil
 
+import reporter
+
 ERROR='error'
+SUCCESS= 'Success'
 result = []
 result_retry = []
-logger = logging.getLogger('app')
+logger = logging.getLogger('fdc_Manager')
 
 def sendMail(cfg, logFile):
     logger.debug("Mail sent .. (not implemented yet)")
@@ -38,28 +41,54 @@ def sendMail(cfg, logFile):
 
 # Collect the returned result when running the client
 def collect_result(val):
+    if val[1] == ERROR or not isPLMXMLSucessfullyDownloaded(val[0]) or not isJTsSucessfullyDownloaded(val[0]):
+        return result.append((val[0], ERROR))
     return result.append(val)
 
 # Collect the returned retry result when running the client
 def collect_result_retry(val):
-    return result_retry.append(val)
+    if val[1] == ERROR or not isPLMXMLSucessfullyDownloaded(val[0]) or not isJTsSucessfullyDownloaded(val[0]):
+        return result_retry.append((val[0], ERROR))
+    return result.append(val)
 
+def isPLMXMLSucessfullyDownloaded(configFileName):
+    logger.info('Check Plmxml status file for configuration: {}'.format(configFileName))
+    
+    configName, logFilePath = defineLogPath(configFileName)
+    plmxmlStatusFilePath = os.path.join(logFilePath, 'FDC.PLMXML.SUCCESS')
+    
+    ret = os.path.isfile(plmxmlStatusFilePath)
+    if ret:
+        logger.info('Plmxml status file exists : {}'.format(plmxmlStatusFilePath))
+    else:
+        logger.info('Plmxml status file not exists : {}'.format(plmxmlStatusFilePath))
+    
+    return ret
+    
+    
+def isJTsSucessfullyDownloaded(configFileName):
+    logger.info('Check Jt status file for configuration: {}'.format(configFileName))
+    
+    configName, logFilePath = defineLogPath(configFileName)
+    jtStatusFilePath = os.path.join(logFilePath, 'FDC.PHYSICAL_FILES.SUCCESS')
+    
+    ret = os.path.isfile(jtStatusFilePath)
+    if ret:
+        logger.info('Jt status file exists : {}'.format(jtStatusFilePath))
+    else:
+        logger.info('JT status file not exists : {}'.format(jtStatusFilePath))
+        
+    return ret
+
+    
 def runClientInt(configFileName):
-    # Get config name from the config file name
-    configName = os.path.splitext(configFileName)[0]
-    logger.debug('Name of input config: {}'.format(configName))
-    
-    product = configName.split('_')[1]
-    logger.debug('Name of carline or powertrain: {}'.format(product))
-    
-    logFilePath = os.path.join(config.Log_OUTPUT, product, configName)
-    logger.debug('Path log file: {}'.format(logFilePath))
+    configName, logFilePath = defineLogPath(configFileName)
     
     fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
     logger.debug('Path FDC User log file: {}'.format(fdcLogFilePath))
     
-    if os.path.exists(logFile):
-        os.remove(logFile)
+    if os.path.exists(fdcLogFilePath):
+        os.remove(fdcLogFilePath)
         logger.info('Log file deleted: {}'.format(fdcLogFilePath))
     
     myenv = os.environ.copy()
@@ -104,7 +133,7 @@ def runClientInt(configFileName):
     ## check result
     logFile = getLatestLog(logFilePath)
     logger.debug('Last log file :  {} \n'.format(logFile))
-    action = "Success"
+    action = SUCCESS
     if os.path.exists(logFile):
         with open(logFile, 'r') as fp:
             for l_no, line in enumerate(fp):
@@ -113,7 +142,7 @@ def runClientInt(configFileName):
                     logger.debug('Line Number: {}'.format( l_no))
                     logger.debug('Line: {}'.format( line))
                     sendMail(configFileName, logFile)
-                    action = "error"
+                    action = ERROR
                     # don't look for next lines
                     return (configFileName, action)
     
@@ -138,6 +167,18 @@ def runClientInt(configFileName):
                 return (configFileName, ERROR)
     
     return (configFileName, action)
+
+def defineLogPath(configFileName):
+    # Get config name from the config file name
+    configName = os.path.splitext(configFileName)[0]
+    logger.debug('Name of input config: {}'.format(configName))
+    
+    product = configName.split('_')[1]
+    logger.debug('Name of carline or powertrain: {}'.format(product))
+    
+    logFilePath = os.path.join(config.Log_OUTPUT, product, configName)
+    logger.debug('Path log file: {}'.format(logFilePath))
+    return configName,logFilePath
 
 
 def runClient(configFileName):
@@ -176,13 +217,14 @@ def main():
     pool.join()
     
     logger.info("############################################")
-    logger.info("# Report:")
+    logger.info("# Execution Report:")
     # for f_res in result_final:
     #    r = f_res.get(timeout=10)
     #    print(r)
     for r in result:
         logger.info(r)
-        
+    logger.info("############################################")
+         
     # Second chance for failed executions
     result_f = ''
     result_final=[]
@@ -191,7 +233,7 @@ def main():
         if r[1] != ERROR:
             continue
         filename = r[0]
-        logger.info('Retry for the configuration: {} \n'.format(filename))
+        logger.info('\n -- Retry for the configuration: {} --'.format(filename))
         f = os.path.join(config.XML_INPUT_DIRECTORY, filename)
         # checking if it is a file
         if os.path.isfile(f):
@@ -203,12 +245,16 @@ def main():
     pool.join()    
     
     logger.info("############################################")
-    logger.info("# Report - Retry:")
+    logger.info("# Retry execution Report:")
     for r in result_retry:
         logger.info(r)
-        
-        
-        
+    logger.info("############################################")
+    
+
+    logger.info("\n-- Generate monitoring Report:")
+    
+    FDC_LOG_ROOT_DIR = r"D:\git\Parallel-fdc\Testdaten\logs"     
+    reporter.generateReport(FDC_LOG_ROOT_DIR, config.FDC_RUNTIME_CSV, config.FDC_RUNNING_JOB_COUNT_CSV) #config.Log_OUTPUT
 
 def printConfig():
     logger.info('Konfiguration:')
@@ -225,6 +271,8 @@ def initLog():
     if not os.path.exists(fdcMnglogDir):
         os.makedirs(fdcMnglogDir)
     fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager.log'))
+    
+    
     logger.debug('FDC-Manager log file path:  {} \n'.format(fdcMnglogFile))
     
     # format the log entries
