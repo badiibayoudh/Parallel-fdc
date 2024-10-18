@@ -1,0 +1,1822 @@
+File Download Client wird um 09-07-2024 18:00:16 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+File Download Client wird um 09-07-2024 18:00:28 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:00:11:321 benötigt wird
+ File Download Client wird um 09-08-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:167
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:821
+Handles nach der Entfernung von Duplikaten: 5616
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-08-2024 18:08:33 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:14:637 benötigt wird
+ File Download Client wird um 09-09-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:320
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:851
+Handles nach der Entfernung von Duplikaten: 5616
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:00:852
+File Download Client wird um 09-09-2024 18:09:09 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:50:932 benötigt wird
+ File Download Client wird um 09-10-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:088
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:031
+Handles nach der Entfernung von Duplikaten: 5616
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-10-2024 18:08:59 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:40:703 benötigt wird
+ File Download Client wird um 09-11-2024 18:00:17 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:872
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:001
+Handles nach der Entfernung von Duplikaten: 5616
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 4 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:492
+File Download Client wird um 09-11-2024 18:09:15 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:58:215 benötigt wird
+ File Download Client wird um 09-12-2024 16:51:15 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+File Download Client wird um 09-12-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Ausnahme beim Bericht im PLMXML-Format
+File Download Client wird um 09-12-2024 18:05:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:11:609 benötigt wird
+ File Download Client wird um 09-13-2024 12:52:58 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:812
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:794
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 402 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:36:134
+File Download Client wird um 09-13-2024 13:04:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:30:484 benötigt wird
+ File Download Client wird um 09-13-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:767
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:794
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:184
+File Download Client wird um 09-13-2024 18:09:28 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:08:679 benötigt wird
+ File Download Client wird um 09-14-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Fehler beim Speichern der Strukturkonfiguration
+File Download Client wird um 09-14-2024 18:00:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:00:09:040 benötigt wird
+ File Download Client wird um 09-15-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:314
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:234
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-15-2024 18:09:37 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:17:964 benötigt wird
+ File Download Client wird um 09-16-2024 18:00:21 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:760
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:093
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-16-2024 18:09:51 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:30:921 benötigt wird
+ File Download Client wird um 09-17-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:731
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:939
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 6 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:264
+File Download Client wird um 09-17-2024 18:09:57 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:39:000 benötigt wird
+ File Download Client wird um 09-18-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:561
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:136
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-18-2024 18:10:32 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:11:990 benötigt wird
+ File Download Client wird um 09-19-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:507
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:305
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 3210 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:04:08:041
+File Download Client wird um 09-19-2024 18:12:09 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:50:154 benötigt wird
+ File Download Client wird um 09-20-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:206
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:981
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-20-2024 18:09:34 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:15:669 benötigt wird
+ File Download Client wird um 09-21-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:837
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:987
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:241
+File Download Client wird um 09-21-2024 18:09:05 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:46:875 benötigt wird
+ File Download Client wird um 09-22-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:833
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:962
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-22-2024 18:09:03 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:44:098 benötigt wird
+ File Download Client wird um 09-23-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:054
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:121
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-23-2024 18:09:19 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:59:980 benötigt wird
+ File Download Client wird um 09-24-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:820
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:894
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-24-2024 18:09:58 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:38:080 benötigt wird
+ File Download Client wird um 09-25-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:824
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:987
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 5 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:00:963
+File Download Client wird um 09-25-2024 18:09:33 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:14:120 benötigt wird
+ File Download Client wird um 09-26-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:679
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:119
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:03:329
+File Download Client wird um 09-26-2024 18:09:31 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:11:002 benötigt wird
+ File Download Client wird um 09-27-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:580
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:061
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-27-2024 18:08:38 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:20:235 benötigt wird
+ File Download Client wird um 09-28-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:736
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:910
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-28-2024 18:08:48 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:28:050 benötigt wird
+ File Download Client wird um 09-29-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:693
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:802
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-29-2024 18:09:06 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:08:45:401 benötigt wird
+ File Download Client wird um 09-30-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:359
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:015
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-30-2024 18:10:21 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:00:718 benötigt wird
+ File Download Client wird um 10-01-2024 12:01:58 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_D6569_M29_R.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_D6569                  
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_D6569_M29_R           
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_D6569_M29_R           
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=D6569}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:01:767
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:990
+Handles nach der Entfernung von Duplikaten: 6019
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 10-01-2024 12:20:50 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:18:52:668 benötigt wird
+ 

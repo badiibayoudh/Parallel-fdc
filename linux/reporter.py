@@ -76,7 +76,7 @@ def add_job_to_hash(jobs_by_time_hash, start_time_string, job_name):
 
 
 def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV):
-    #logger.info('Generating Report: {}'.format(fdcLogFilePath))
+    logger.info('Generating Reports: {} und {}'.format(FdcRuntimeCSV, FdcRunningJobCountCSV))
     csv_header_line = "JobName;StartTime;ReportReadyTime;UniqueJTCount;JTsToDownloadCount;JTDownloadErrorCount;JTDownloadCompleteTime;EndTime"
     with open(FdcRuntimeCSV, 'w', newline='') as file:
         file.write(csv_header_line + '\n')

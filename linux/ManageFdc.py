@@ -29,6 +29,7 @@ import config
 import shutil
 
 import reporter
+import cleaner
 
 ERROR='error'
 SUCCESS= 'Success'
@@ -88,7 +89,7 @@ def runClientInt(configFileName):
     fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
     logger.debug('Path FDC User log file: {}'.format(fdcLogFilePath))
     
-    if os.path.exists(fdcLogFilePath):
+    if os.path.isfile(fdcLogFilePath):
         os.remove(fdcLogFilePath)
         logger.info('Log file deleted: {}'.format(fdcLogFilePath))
     
@@ -254,8 +255,13 @@ def main():
 
     logger.info("\n-- Generate monitoring Report:")
     
-
-    reporter.generateReport(config.Log_OUTPUT, config.FDC_RUNTIME_CSV, config.FDC_RUNNING_JOB_COUNT_CSV)
+    fdcRuntimeFilePath = os.path.join(config.MONITORING_PATH, f"FDC-Runtime-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+    fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+    reporter.generateReport(config.Log_OUTPUT, fdcRuntimeFilePath, fdcRunningJobFilePath)
+    
+    logger.info("\n-- Archiving & Cleanup")
+    cleaner.archive_and_cleanup(config.MONITORING_PATH, config.ARCHIVE_PATH)
+    
 
 def printConfig():
     logger.info('Konfiguration:')

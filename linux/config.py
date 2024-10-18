@@ -12,8 +12,11 @@ Move_PLMXML_TO='D:/git/Parallel-fdc/test/plmxml'
 ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid5457'
 
-FDC_RUNTIME_CSV = r"D:\git\Parallel-fdc\Testdaten\FDC-Runtime-new.csv"
-FDC_RUNNING_JOB_COUNT_CSV = r"D:\git\Parallel-fdc\Testdaten\FDC-RunningJobCount-new.csv"
+MONITORING_PATH = 'D:\AS-PLM\Tests\Testdaten\Monitoring'
+ARCHIVE_PATH = 'D:\AS-PLM\Tests\Testdaten\Archive'
+
+#FDC_RUNTIME_CSV = r"D:\git\Parallel-fdc\Testdaten\FDC-Runtime-new.csv"
+#FDC_RUNNING_JOB_COUNT_CSV = r"D:\git\Parallel-fdc\Testdaten\FDC-RunningJobCount-new.csv"
 
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=5

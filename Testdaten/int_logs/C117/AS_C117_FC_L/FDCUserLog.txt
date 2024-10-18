@@ -1,0 +1,1883 @@
+File Download Client wird um 09-07-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+File Download Client wird um 09-07-2024 18:00:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:00:11:037 benötigt wird
+ File Download Client wird um 09-08-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:745
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:274
+Handles nach der Entfernung von Duplikaten: 10651
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-08-2024 18:10:53 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:34:033 benötigt wird
+ File Download Client wird um 09-09-2024 18:00:17 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:768
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:149
+Handles nach der Entfernung von Duplikaten: 10651
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 4 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:00:944
+File Download Client wird um 09-09-2024 18:11:17 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:59:806 benötigt wird
+ File Download Client wird um 09-10-2024 18:00:17 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:871
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:182
+Handles nach der Entfernung von Duplikaten: 10651
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-10-2024 18:11:11 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:53:739 benötigt wird
+ File Download Client wird um 09-11-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:355
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:037
+Handles nach der Entfernung von Duplikaten: 10651
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:00:751
+File Download Client wird um 09-11-2024 18:11:40 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:21:033 benötigt wird
+ File Download Client wird um 09-12-2024 16:51:17 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+File Download Client wird um 09-12-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Ausnahme beim Bericht im PLMXML-Format
+File Download Client wird um 09-12-2024 18:05:30 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:05:11:706 benötigt wird
+ File Download Client wird um 09-13-2024 12:18:38 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc_1.0.0/input_configs_test/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:05:210
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:040
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 23 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:05:427
+File Download Client wird um 09-13-2024 12:31:38 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:13:00:472 benötigt wird
+ File Download Client wird um 09-13-2024 12:52:55 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:05:459
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:409
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-13-2024 13:07:19 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:14:24:036 benötigt wird
+ File Download Client wird um 09-13-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:112
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:272
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-13-2024 18:13:42 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:13:23:538 benötigt wird
+ File Download Client wird um 09-14-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Fehler beim Speichern der Strukturkonfiguration
+File Download Client wird um 09-14-2024 18:00:29 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:00:10:454 benötigt wird
+ File Download Client wird um 09-15-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:06:383
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:552
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-15-2024 18:11:48 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:29:591 benötigt wird
+ File Download Client wird um 09-16-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:05:654
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:721
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-16-2024 18:12:07 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:47:913 benötigt wird
+ File Download Client wird um 09-17-2024 18:00:21 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:351
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:150
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 3 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:045
+File Download Client wird um 09-17-2024 18:12:13 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:51:967 benötigt wird
+ File Download Client wird um 09-18-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:05:226
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:190
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-18-2024 18:12:58 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:12:38:066 benötigt wird
+ File Download Client wird um 09-19-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:07:268
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:952
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 147 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:24:468
+File Download Client wird um 09-19-2024 18:14:34 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:14:13:535 benötigt wird
+ File Download Client wird um 09-20-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:535
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:493
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-20-2024 18:11:38 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:20:097 benötigt wird
+ File Download Client wird um 09-21-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:592
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:154
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-21-2024 18:11:11 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:51:685 benötigt wird
+ File Download Client wird um 09-22-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:670
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:105
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-22-2024 18:10:58 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:39:562 benötigt wird
+ File Download Client wird um 09-23-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:861
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:185
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-23-2024 18:11:24 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:06:490 benötigt wird
+ File Download Client wird um 09-24-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:05:283
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:503
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 1 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:636
+File Download Client wird um 09-24-2024 18:12:32 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:12:12:833 benötigt wird
+ File Download Client wird um 09-25-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:04:195
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:172
+Handles nach der Entfernung von Duplikaten: 10656
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 3 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:480
+File Download Client wird um 09-25-2024 18:11:43 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:24:641 benötigt wird
+ File Download Client wird um 09-26-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:905
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:497
+Handles nach der Entfernung von Duplikaten: 10656
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 2 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:236
+File Download Client wird um 09-26-2024 18:11:38 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:19:835 benötigt wird
+ File Download Client wird um 09-27-2024 18:00:20 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:510
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:260
+Handles nach der Entfernung von Duplikaten: 10656
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 6 Handles werden heruntergeladen
+Die vorgegangene Zeit, um die Dateien herunterzuladen: 00:00:01:501
+File Download Client wird um 09-27-2024 18:10:10 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:09:50:493 benötigt wird
+ File Download Client wird um 09-28-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:02:350
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:057
+Handles nach der Entfernung von Duplikaten: 10656
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-28-2024 18:12:11 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:11:51:821 benötigt wird
+ File Download Client wird um 09-29-2024 18:00:18 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:796
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:00:997
+Handles nach der Entfernung von Duplikaten: 10656
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-29-2024 18:11:02 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:10:43:526 benötigt wird
+ File Download Client wird um 09-30-2024 18:00:19 gestartet
+File Download Client Host : null 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:05:632
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:374
+Handles nach der Entfernung von Duplikaten: 10656
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 09-30-2024 18:12:57 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:12:38:356 benötigt wird
+ File Download Client wird um 10-01-2024 12:01:56 gestartet
+File Download Client Host : sgdem0011950 
+
+************************************************
+*                   FDC                        *
+*           File Download Client               *
+************************************************
+Lesen der Eingabedatei von: /applications/local/config/fdc/AS_C117_FC_L.xml
+Eingabedatei erfolgreich gelesen
+Validierungen sind erfolgreich, erforderliche Parameter wurden gesetzt, Fortsetzung mit der Erstellung von Berichtobjekten
+
+Current parameter settings:
+--------------------------------------------------------------------
+smdXpPathPrefix           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/
+project                   =   P_C412_MCG               
+smdCheckTimeStamp         =   TRUE                     
+deleteOldModels           =   False                    
+operatingSystem           =   UNIX                     
+smdPlmXmlConfig           =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/AS-PLM.xml
+modelConfig               =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname
+shortcutFileConfig        =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.shortcut
+nonCatiaConfig            =   /applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/config/SMDplus.modelname2
+upperCaseModName          =   NO_upperCaseModName      
+projectSubDirs            =   TRUE                     
+replacePlusMinus          =   NO_replacePlusMinus      
+replaceApostrophe         =   NO_replaceApostrophe     
+refConfig                 =   AS_C117_FC_L             
+refConfigProject          =                            
+refConfigSmaragdClass     =   j0RefCfg                 
+refFilter                 =   NO_refFilter             
+refFilterProject          =   NO_refFilterProject      
+alternativeFilter         =   NO_alternativeFilter     
+assemblyConfig            =   NO_assemblyConfig        
+dataConfigInput           =   NO_dataConfigInput       
+variantsConfigInput       =   NO_variantsConfigInput   
+productOverviewConfig     =   NO_productOverviewConfig 
+downloadName              =   AS_C117_FC_L             
+withLocked                =   false                    
+withInvalid               =   NO_withInvalid           
+reportLanguage            =   DE                       
+outputFormat              =   NO_outputFormat          
+legacyMode                =   true                     
+maxLevelOfExpansion       =   2000                     
+expandStops               =   NO_expandStops           
+downloadMap               =   /mounts/import/cdm/VISVIEW/MAP_fdc
+filePathStructure         =   /mounts/import/cdm/VISVIEW/AS-PLM_fdc
+downloadDirectory         =   [{message=true, type=JT, downloadDir=/mounts/import/cdm/geo/jt}]
+createPlmXmlConfig        =   true                     
+downloadModels            =   TRUE                     
+keepModelList             =   FALSE                    
+fileCategoryIncluded      =   NO_fileCategoryIncluded  
+fileTypesIncluded         =   JT                       
+customer                  =   Armin Knorr              
+description               =   Datenversorgung AS-PLM   
+comment                   =   1                        
+rootNodeList              =   [{rootNodeClass=j0SDiaBR, rootNodeVersion=null, rootNodePartNumber=C117}]
+dbScoper                  =   SMADIA2                  
+--------------------------------------------------------------------
+INDIVIDUAL_REPORT Flag wurde auf true gesetzt
+Senden einer Anfrage um Bericht im PLMXML-Format herunterzuladen
+Die vorgegangene Zeit, um den Bericht herunterzuladen: 00:00:03:233
+Sammeln von Dateideskriptoren mit ticket
+Die vorgegangene Zeit, um die Dateideskriptoren zu sammeln: 00:00:01:322
+Handles nach der Entfernung von Duplikaten: 10655
+SMD_CHECK_TIMESTAMP wird auf true gesetzt. 0 Handles werden heruntergeladen
+File Download Client wird um 10-01-2024 12:22:54 gestoppt
+
+Gesamtzeit, die für den Abschluss von FDC 00:20:57:848 benötigt wird
+ 
