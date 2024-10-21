@@ -79,8 +79,8 @@ Move_PLMXML_FROM='/mounts/import/cdm/VISVIEW/AS-PLM_fdc/'
 Move_PLMXML_TO='/mounts/import/cdm/VISVIEW/AS-PLM/'
 MOVE_PLMXML=True
 
-MONITORING_PATH = '/applications/logs/fdc/Monitoring'
-ARCHIVE_PATH = '/applications/logs/fdc/Archive'
+MONITORING_PATH = '/applications/logs/fdc/monitoring'
+ARCHIVE_PATH = '/applications/logs/fdc/archive'
 
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=15

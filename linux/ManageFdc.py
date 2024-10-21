@@ -255,8 +255,8 @@ def main():
 
     logger.info("\n-- Generate monitoring Report:")
     if createDirectory(config.MONITORING_PATH):
-        fdcRuntimeFilePath = os.path.join(config.MONITORING_PATH, f"FDC-Runtime-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-        fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        fdcRuntimeFilePath = os.path.join(config.MONITORING_PATH, f"FDC-Runtime_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount:wq_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
         reporter.generateReport(config.Log_OUTPUT, fdcRuntimeFilePath, fdcRunningJobFilePath)
     else:
         logger.error(f"Monitorng Report could not be generated because of missing target folder")
