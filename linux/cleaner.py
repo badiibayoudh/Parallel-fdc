@@ -18,9 +18,22 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
     :param days_to_archive: Die Anzahl der Tage, nach denen Dateien archiviert werden.
     :param days_to_delete: Die Anzahl der Tage, nach denen archivierte TAR.GZ-Dateien gelöscht werden.
     """
-    # Stelle sicher, dass das Archivverzeichnis existiert
-    if not os.path.exists(archive_dir):
-        os.makedirs(archive_dir)
+    
+    if not os.path.exists(directory):
+        logger.error(f"Folder is not existing: {directory}")
+        return
+     
+    try:
+        # Prüfen, ob das Verzeichnis bereits existiert
+        if not os.path.exists(archive_dir):
+            # Erstellen des Verzeichnisses
+            os.makedirs(archive_dir)
+            logger.info(f"Directory '{archive_dir}' created successfully.")
+        else:
+            logger.info(f"Directory '{archive_dir}' already exists.")
+    except Exception as e:
+        logger.error(f"Error creating directory: {e}. Cleanup & Archiving could not be started")
+        return
 
     # Aktuelle Zeit
     now = time.time()
@@ -41,7 +54,7 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
                 if file_age > days_to_archive:
                     archive.add(file_path, arcname=os.path.basename(file_path))
                     os.remove(file_path)
-                    logger.info(f"Archiviert und gelöscht: {filename}")
+                    logger.info(f"Archived and deleted: {filename}")
 
     # Löschen: TAR.GZ-Archive, die älter als days_to_delete Tage sind, entfernen
     for archived_file in os.listdir(archive_dir):
@@ -54,10 +67,4 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
             # Löschen, wenn älter als days_to_delete
             if archived_file_age > days_to_delete:
                 os.remove(archived_file_path)
-                logger.info(f"Gelöscht: {archived_file}")
-
-# Beispiel: Verwendung der Funktion
-directory_to_monitor = 'D:/git/Parallel-fdc/Testdaten/Monitoring'
-archive_directory = 'D:/git/Parallel-fdc/Testdaten/Archive'
-
-#archive_and_cleanup(directory_to_monitor, archive_directory)
+                logger.info(f"Deleted: {archived_file}")

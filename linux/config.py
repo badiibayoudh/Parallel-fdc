@@ -1,7 +1,7 @@
 
 ###### Please configure the client by entering the settings below.. ##########
 
-
+"""
 XML_INPUT_DIRECTORY = 'D:/git/Parallel-fdc/windows/configsPrd/'
 FILE_DOWNLOAD_CLIENT_HOME = 'D:/git/Parallel-fdc/'
 Log_OUTPUT = 'D:/git/Parallel-fdc/logs/'
@@ -21,7 +21,7 @@ ARCHIVE_PATH = 'D:\AS-PLM\Tests\Testdaten\Archive'
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=5
 MOVE_PLMXML=False
-
+"""
 
 """
 # T3 gegen CRM
@@ -62,7 +62,7 @@ waitTimeBeforeClose=30
 
 """
 
-"""
+
 # INT gegen PRD
 FFILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
 # Aktive config Verzsichniss
@@ -79,8 +79,8 @@ Move_PLMXML_FROM='/mounts/import/cdm/VISVIEW/AS-PLM_fdc/'
 Move_PLMXML_TO='/mounts/import/cdm/VISVIEW/AS-PLM/'
 MOVE_PLMXML=True
 
-FDC_RUNTIME_CSV = '/applications/logs/fdc/FDC-Runtime-new.csv'
-FDC_RUNNING_JOB_COUNT_CSV = '/applications/logs/fdc/FDC-RunningJobCount-new.csv'
+MONITORING_PATH = '/applications/logs/fdc/Monitoring'
+ARCHIVE_PATH = '/applications/logs/fdc/Archive'
 
 STATUS_CHECK_INTERVAL=5
 MAX_Processes=15
@@ -91,7 +91,7 @@ ENVIRONMENT_TO_CONNECT='PROD'
 #USERPID='pid5457'
 
 USERPID='pid1489'
-"""
+
 
 # Thanks.
 ################################################################################

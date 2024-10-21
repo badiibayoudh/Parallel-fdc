@@ -254,15 +254,31 @@ def main():
     
 
     logger.info("\n-- Generate monitoring Report:")
-    
-    fdcRuntimeFilePath = os.path.join(config.MONITORING_PATH, f"FDC-Runtime-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-    fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-    reporter.generateReport(config.Log_OUTPUT, fdcRuntimeFilePath, fdcRunningJobFilePath)
+    if createDirectory(config.MONITORING_PATH):
+        fdcRuntimeFilePath = os.path.join(config.MONITORING_PATH, f"FDC-Runtime-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount-new_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        reporter.generateReport(config.Log_OUTPUT, fdcRuntimeFilePath, fdcRunningJobFilePath)
+    else:
+        logger.error(f"Monitorng Report could not be generated because of missing target folder")
     
     logger.info("\n-- Archiving & Cleanup")
     cleaner.archive_and_cleanup(config.MONITORING_PATH, config.ARCHIVE_PATH)
-    
 
+def createDirectory(pfad):
+    try:
+        # Prüfen, ob das Verzeichnis bereits existiert
+        if not os.path.exists(pfad):
+            # Erstellen des Verzeichnisses
+            os.makedirs(pfad)
+            logger.info(f"Directory '{pfad}' created successfully.")
+        else:
+            logger.info(f"Directory '{pfad}' already exists.")
+    except Exception as e:
+        logger.error(f"Error creating directory: {e}.")
+        return False
+    
+    return True
+        
 def printConfig():
     logger.info('Konfiguration:')
     logger.info('  - XML_INPUT_DIRECTORY: {}'.format(config.XML_INPUT_DIRECTORY))
