@@ -115,7 +115,7 @@ def runClientInt(configFileName):
     logger.info('downloadArgs:  {} , {} \n'.format(downloadArgs1, downloadArgs2))
     
     javaCmd = os.path.join(config.JAVA_PATH, 'java')
-    fdcClientPath = os.path.join(config.FILE_DOWNLOAD_CLIENT_HOME, 'fdc_v7_07_08_2024.jar')
+    fdcClientPath = os.path.join(config.FILE_DOWNLOAD_CLIENT_HOME, 'fdc.jar')
     
     command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
     
@@ -256,7 +256,7 @@ def main():
     logger.info("\n-- Generate monitoring Report:")
     if createDirectory(config.MONITORING_PATH):
         fdcRuntimeFilePath = os.path.join(config.MONITORING_PATH, f"FDC-Runtime_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-        fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount:wq_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        fdcRunningJobFilePath = os.path.join(config.MONITORING_PATH, f"FDC-RunningJobCount_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
         reporter.generateReport(config.Log_OUTPUT, fdcRuntimeFilePath, fdcRunningJobFilePath)
     else:
         logger.error(f"Monitorng Report could not be generated because of missing target folder")

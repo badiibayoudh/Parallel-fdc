@@ -40,9 +40,8 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
 
     # Erstelle eine TAR.GZ-Datei mit einem Zeitstempel im Namen
     archive_name = os.path.join(archive_dir, f"monitoring_fdc_{datetime.now().strftime('%Y%m%d_%H%M%S')}.tar.gz")
-
     fileFound = False
-    
+
     with tarfile.open(archive_name, "w:gz") as archive:
         # Archivierung: Dateien älter als days_to_archive Tage packen
         for filename in os.listdir(directory):
@@ -61,7 +60,8 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
 
     if not fileFound:
         os.remove(archive_name)
-                
+
+
     # Löschen: TAR.GZ-Archive, die älter als days_to_delete Tage sind, entfernen
     for archived_file in os.listdir(archive_dir):
         archived_file_path = os.path.join(archive_dir, archived_file)
