@@ -66,7 +66,7 @@ rem set DOWNLOAD_ARGS=--encryptedCredLocation="%USERPROFILE%\Credentials\Encrypt
 
 echo "Download args: %DOWNLOAD_ARGS%"
 
-C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%
+C:"\apps\java\java17\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v10_30_10_2024.jar" %MODE% %DOWNLOAD_ARGS%
 
 rem C:"\Armin\03_Freeware\graalvm-ce-java17-22.3.0\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%svc40-batch-app.jar" %MODE% %DOWNLOAD_ARGS%
 rem C:"\Program Files\EC\jre\bin\java" -Dfile.encoding=UTF-8 -jar "%FILE_DOWNLOAD_CLIENT_HOME%fdc_v6_26_06_2024.jar" %MODE% %DOWNLOAD_ARGS%

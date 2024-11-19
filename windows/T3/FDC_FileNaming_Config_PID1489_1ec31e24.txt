@@ -1,0 +1,8 @@
+{
+  "projectName" : "P_223",
+  "fileNamingConfigurationName" : "FDC_FNC_PID1489_1ec31e24",
+  "smdUppercaseModname" : false,
+  "replacePlusMinus" : false,
+  "replaceApostroph" : false,
+  "projectSubDirs" : true
+}
