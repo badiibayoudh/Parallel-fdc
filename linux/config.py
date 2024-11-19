@@ -1,6 +1,55 @@
 import yaml
 import os
 
+def load_config_with_env_required(filename="application.yml"):
+    """
+    Lädt eine YAML-Datei und ersetzt Platzhalter durch Werte aus den Umgebungsvariablen.
+    Wirft eine Exception, wenn eine erforderliche Umgebungsvariable fehlt.
+
+    :param yaml_file: Pfad zur YAML-Datei
+    :return: Dictionary mit aufgelöster Konfiguration
+    """
+    def resolve_env(value):
+        """
+        Ersetzt Platzhalter im Format ${VAR} mit Umgebungsvariablen.
+        Wirft eine Exception, wenn die Variable nicht gesetzt ist.
+        """
+        if isinstance(value, str) and "${" in value:
+            start = value.find("${") + 2
+            end = value.find("}", start)
+            var_name = value[start:end]
+            env_value = os.getenv(var_name)
+            if env_value is None:
+                raise ValueError(f"Die erforderliche Umgebungsvariable '{var_name}' ist nicht gesetzt.")
+            return env_value
+        return value
+
+    def recursive_resolve(config):
+        """
+        Rekursive Verarbeitung der YAML-Datenstruktur.
+        """
+        if isinstance(config, dict):
+            return {k: recursive_resolve(v) for k, v in config.items()}
+        elif isinstance(config, list):
+            return [recursive_resolve(i) for i in config]
+        else:
+            return resolve_env(config)
+
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # Construct the full path to the YAML file
+    file_path = os.path.join(script_dir, filename)
+    
+    with open(file_path, 'r') as file:
+        try:
+            raw_config = yaml.safe_load(file)
+        except yaml.YAMLError as e:
+            print("Error reading YAML file:", e)
+            return None
+        
+        resolved_config = recursive_resolve(raw_config)
+        return resolved_config
+
 def read_yaml_properties(filename="application.yml"):
     # Get the directory of the current script
     script_dir = os.path.dirname(os.path.abspath(__file__))

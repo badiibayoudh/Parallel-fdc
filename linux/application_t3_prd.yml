@@ -1,5 +1,8 @@
-log_output: '/applications/logs/fdc/'
+log_output: ${FDC_LOG_DIR:-/applications/logs/fdc/}
 workflow:
+    mailing: true
+        mail: true
+        mailing_list: '/applications/local/config/mail/piterion_maillist.txt'
     plmxml:
         move_from: '/mounts/import/cdm/VISVIEW/AS-PLM_fdc/'
         move_to: '/mounts/import/cdm/VISVIEW/AS-PLM/'
@@ -7,18 +10,19 @@ workflow:
     monitoring_path: '/applications/logs/fdc/monitoring'
     archive_path: '/applications/logs/fdc/archive'
     max_processes: 15
+
 fdc:
-    file_download_client_home: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/'
+    file_download_client_home: ${FDC_HOME}
     environment_to_connect: 'PROD'
     # Uncomment the following for old credentials:
     # USERPID: 'pid5457'
     userpid: 'pid1489'
-    credentials: '/applications/asplm/asplmt3/security/fdc/encrypted_cred.txt'
+    credentials: ${FDC_CREDENTIALS_FILE}
+    #'/applications/asplm/asplmt3/security/fdc/encrypted_cred.txt'
     # Uncomment this line for production credentials:
     # CREDENTIALS: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/secure/EncryptedCred_PROD.txt'
-    xml_input_directory: '/applications/local/config/fdc/'
+    xml_input_directory: ${FDC_CONF_DIR}
     # XML_INPUT_DIRECTORY: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/configs/'
     status_check_interval: 1
     fdc_map: '/mounts/import/cdm/MAP_fdc'
-    java_path: '/applications/asplm/asplmt3/java/jdk17/bin/'
-    # ${DB_HOST}
+    java_path: ${JAVA_HOME}

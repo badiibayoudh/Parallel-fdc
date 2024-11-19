@@ -1,5 +1,8 @@
 log_output: '/applications/logs/fdc/'
 workflow:
+    mailing: true
+        mail: true
+        mailing_list: '/applications/local/config/mail/piterion_maillist.txt'
     plmxml:
         move_from: '/mounts/import/cdm/VISVIEW/AS-PLM_fdc/'
         move_to: '/mounts/import/cdm/VISVIEW/AS-PLM/'

@@ -40,16 +40,50 @@ result = []
 result_retry = []
 logger = logging.getLogger('fdc_Manager')
 
+def execute_shell_script(script_path, config_name, log_path, mailing_list):
+    """
+    Führt ein Shell-Skript mit den angegebenen Argumenten aus.
+    
+    :param script_path: Pfad zum Shell-Skript
+    :param config_name: Name der Konfiguration (als Argument für das Skript)
+    :param log_path: Pfad zur Logdatei (als Argument für das Skript)
+    :return: tuple (stdout, stderr, returncode)
+    """
+    try:
+        result = subprocess.run(
+            ["bash", script_path, "--fdc_config", config_name, "--fdc_log", log_path, "--mail", mailing_list],
+            capture_output=True,
+            text=True,
+            check=False
+        )
+        return result.stdout, result.stderr, result.returncode
+    except FileNotFoundError:
+        raise Exception(f"Das Shell-Skript {script_path} wurde nicht gefunden.")
+    except Exception as e:
+        raise Exception(f"Fehler beim Ausführen des Shell-Skripts: {str(e)}")
+    
 def sendMail(configFileName):
-    #logger.debug("Mail sent .. (not implemented yet)")
+    if not settings["workflow"]["mailing"]["mail"]:
+        logger.debug("Mailing is in the configuration disabled")
+        exit
+
     configName, logFilePath = defineLogPath(configFileName)
     fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
-    environment = settings["fdc"]["environment_to_connect"]
+    #environment = settings["fdc"]["environment_to_connect"]
     
-    if os.path.isfile(fdcLogFilePath):
-        logger.debug('Path FDC User log file: {}'.format(fdcLogFilePath))
-        
+    if not os.path.isfile(fdcLogFilePath):
+        logger.error('Path of FDC User log file is not found: {}'.format(fdcLogFilePath))
+        exit
     
+    stdout, stderr, returncode = execute_shell_script("send_fdc_mail.sh", configName, logFilePath, settings["workflow"]["mailing"]["mailing_list"])
+
+    if returncode == 0:
+        logger.debug("Email script successfully executed!")
+        logger.debug("Output: {}".format(stdout))
+    else:
+        logger.error("Email script failed!")
+        logger.error("Error output :".format(stderr))
+        logger.error("Return code:".format(returncode))
 
 # Collect the returned result when running the client
 def collect_result(val):
@@ -334,7 +368,7 @@ def printConfig():
 
 def loadConfig():
     global settings
-    settings = config.read_yaml_properties()
+    settings = config.read_yaml_properties("application_t3_prd.yml")
     
     #test
     print(settings)
