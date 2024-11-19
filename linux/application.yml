@@ -1,4 +1,4 @@
-log_output: '/applications/logs/fdc/'
+log_output: ${FDC_LOG_DIR}
 workflow:
     mailing: true
         mail: true
@@ -10,19 +10,22 @@ workflow:
     monitoring_path: '/applications/logs/fdc/monitoring'
     archive_path: '/applications/logs/fdc/archive'
     max_processes: 15
+
 fdc:
-    file_download_client_home: '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
+    file_download_client_home: ${FDC_HOME}
     environment_to_connect: 'PROD'
     # Uncomment the following for old credentials:
     # USERPID: 'pid5457'
     userpid: 'pid1489'
-    credentials: '/applications/asplm/asplmint/security/fdc/encrypted_cred.txt'
+    credentials: ${FDC_CREDENTIALS_FILE}
+    # credentials: '/applications/asplm/asplmint/security/fdc/encrypted_cred.txt'
     # Uncomment this line for production credentials:
     # CREDENTIALS: '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/secure/EncryptedCred_PROD.txt'
-    xml_input_directory: '/applications/local/config/fdc/'
+    xml_input_directory: ${FDC_CONF_DIR}
     # XML_INPUT_DIRECTORY: '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/input_config_RegressionTests'
     # XML_INPUT_DIRECTORY: '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/input_configs_test'
     # XML_INPUT_DIRECTORY: '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/testConfig/'
     status_check_interval: 1
     fdc_map: '/mounts/import/cdm/MAP_fdc'
-    java_path: '/applications/asplm/asplmint/java/jdk17/bin/'
+    java_path: ${JAVA_HOME}
+    # java_path: '/applications/asplm/asplmint/java/jdk17/bin/'
