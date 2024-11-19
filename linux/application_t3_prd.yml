@@ -20,5 +20,5 @@ fdc:
     # XML_INPUT_DIRECTORY: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/configs/'
     status_check_interval: 1
     fdc_map: '/mounts/import/cdm/MAP_fdc'
-    java_path: '/applications/asplm/asplmt3/java/jdk17/bin/' 
+    java_path: '/applications/asplm/asplmt3/java/jdk17/bin/'
     # ${DB_HOST}
