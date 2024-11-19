@@ -1,4 +1,21 @@
+import yaml
+import os
 
+def read_yaml_properties(filename="application.yml"):
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # Construct the full path to the YAML file
+    file_path = os.path.join(script_dir, filename)
+    
+    # Read the YAML file
+    with open(file_path, 'r') as file:
+        try:
+            properties = yaml.safe_load(file)
+            return properties
+        except yaml.YAMLError as e:
+            print("Error reading YAML file:", e)
+            return None
+        
 ###### Please configure the client by entering the settings below.. ##########
 
 """
@@ -62,9 +79,9 @@ waitTimeBeforeClose=30
 
 """
 
-
+"""
 # INT gegen PRD
-FFILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
+FILE_DOWNLOAD_CLIENT_HOME = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/'
 # Aktive config Verzsichniss
 XML_INPUT_DIRECTORY = '/applications/local/config/fdc/'
 #XML_INPUT_DIRECTORY = '/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc_1.0.0/input_config_RegressionTests'
@@ -82,7 +99,9 @@ MOVE_PLMXML=True
 MONITORING_PATH = '/applications/logs/fdc/monitoring'
 ARCHIVE_PATH = '/applications/logs/fdc/archive'
 
-STATUS_CHECK_INTERVAL=5
+FDC_MAP= '/mounts/import/cdm/MAP_fdc'
+
+STATUS_CHECK_INTERVAL=1
 MAX_Processes=15
 
 ENVIRONMENT_TO_CONNECT='PROD'
@@ -93,5 +112,6 @@ ENVIRONMENT_TO_CONNECT='PROD'
 USERPID='pid1489'
 
 
+"""
 # Thanks.
 ################################################################################

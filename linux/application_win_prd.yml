@@ -1,0 +1,20 @@
+log_output: 'D:/git/Parallel-fdc/logs/'
+workflow:
+    plmxml:
+        move_from: 'D:/git/Parallel-fdc/test/plmxml_fdc'
+        move_to: 'D:/git/Parallel-fdc/test/plmxml'
+        move: true
+    monitoring_path: 'D:\AS-PLM\Tests\Testdaten\Monitoring'
+    archive_path: 'D:\AS-PLM\Tests\Testdaten\Archive'
+    max_processes: 15
+fdc:
+    file_download_client_home: 'D:/git/Parallel-fdc/'
+    environment_to_connect: 'PROD'
+    # Uncomment the following for old credentials:
+    # USERPID: 'pid5457'
+    userpid: 'pid1489'
+    credentials: 'D:/git/Parallel-fdc/EncryptedCred_PROD.txt'
+    xml_input_directory: 'D:/git/Parallel-fdc/windows/configsPrd/'
+    status_check_interval: 1
+    fdc_map: '/mounts/import/cdm/MAP_fdc'
+    java_path: 'D:/Apps/Java/jdk-17/jdk-17.0.7/bin/'

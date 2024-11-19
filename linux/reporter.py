@@ -74,9 +74,17 @@ def add_job_to_hash(jobs_by_time_hash, start_time_string, job_name):
             jobs_by_time_hash[rounded_start_time] = []
         jobs_by_time_hash[rounded_start_time].append(job_name)
 
+def xml_dateinamen_auflisten(verzeichnis):
+    """Listet die Namen aller .xml-Dateien ohne Extension in einem Verzeichnis auf."""
+    dateinamen = [os.path.splitext(datei)[0] for datei in os.listdir(verzeichnis) if datei.endswith('.xml')]
+    return dateinamen
 
-def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV):
+def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV, FdcConfigDir):
     logger.info('Generating Reports: {} und {}'.format(FdcRuntimeCSV, FdcRunningJobCountCSV))
+    
+    # Collect the names of FDC configuration files
+    all_configs = xml_dateinamen_auflisten(FdcConfigDir)
+    
     csv_header_line = "JobName;StartTime;ReportReadyTime;UniqueJTCount;JTsToDownloadCount;JTDownloadErrorCount;JTDownloadCompleteTime;EndTime"
     with open(FdcRuntimeCSV, 'w', newline='') as file:
         file.write(csv_header_line + '\n')
@@ -92,11 +100,17 @@ def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV):
         if os.path.isfile(os.path.join(job_log_dir, "FDCUserLog.txt")):
             job_name = os.path.basename(job_log_dir)
 
+            # SMA-291: Bei der Erstellung der Monitoring-Datei werden nur FDC.logs berücksichtigt, zu welchen ein Konfig.xml vorhanden.
+            if not job_name in all_configs:
+                continue
+            
             start_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.START"))
             report_ready_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PLMXML.SUCCESS"))
             model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.SUCCESS"))
-            if model_download_complete_time == "-":
-                model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.ERROR"))
+            
+            # SMA-291: Entfernen der Suche nach JTDownloadCompleteTime mit  FDC.PHYSICAL_Files.Error. Soll nur in FDC.PHYSICAL_Files_Success gesucht werden. Wenn Success nicht vorhanden, dann keine Endzeit, dann einen "-" (Strich) eintragen
+            #if model_download_complete_time == "-":
+            #    model_download_complete_time = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.PHYSICAL_FILES.ERROR"))
             end_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.END"))
 
             unique_file_handles = get_unique_file_handles(os.path.join(job_log_dir, "FDCUserLog.txt"))

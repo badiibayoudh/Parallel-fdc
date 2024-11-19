@@ -6,7 +6,29 @@ from datetime import datetime
 import logging
 logger = logging.getLogger('fdc_Manager')
 
-def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_delete=120):
+def deleteFiles(verzeichnis, alter_in_tagen=30):
+    jetzt = time.time()
+    alter_in_sekunden = alter_in_tagen * 86400  # 86400 Sekunden pro Tag
+
+    for wurzel, _, dateien in os.walk(verzeichnis):
+        for datei in dateien:
+            dateipfad = os.path.join(wurzel, datei)
+            # Zeit der letzten Änderung der Datei
+            letzte_aenderung = os.path.getmtime(dateipfad)
+
+            # Datei löschen, wenn älter als das angegebene Alter
+            if jetzt - letzte_aenderung > alter_in_sekunden:
+                os.remove(dateipfad)
+                logger.info(f"Deleted '{dateipfad}' ")
+                
+def dateien_auflisten(verzeichnis):
+    alle_dateien = []
+    for wurzel, _, dateien in os.walk(verzeichnis):
+        for datei in dateien:
+            alle_dateien.append(os.path.join(wurzel, datei))
+    return alle_dateien
+
+def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_delete=120, isRecursive=False, onlyLog=False):
     logger.info('Archiving and cleanup vom : {}'.format(directory))
     
     """
@@ -42,10 +64,17 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
     archive_name = os.path.join(archive_dir, f"monitoring_fdc_{datetime.now().strftime('%Y%m%d_%H%M%S')}.tar.gz")
     fileFound = False
 
+    files = dateien_auflisten(directory)
+
     with tarfile.open(archive_name, "w:gz") as archive:
         # Archivierung: Dateien älter als days_to_archive Tage packen
-        for filename in os.listdir(directory):
-            file_path = os.path.join(directory, filename)
+        #for filename in os.listdir(directory):
+        for file_path in files:
+            if onlyLog:
+                if not file_path.endswith('.log'):
+                    continue
+                    
+            #file_path = os.path.join(directory, filename)
 
             if os.path.isfile(file_path):
                 # Dateialter berechnen
@@ -56,7 +85,7 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
                     archive.add(file_path, arcname=os.path.basename(file_path))
                     os.remove(file_path)
                     fileFound = True
-                    logger.info(f"Archived and deleted: {filename}")
+                    logger.info(f"Archived and deleted: {file_path}")
 
     if not fileFound:
         os.remove(archive_name)
