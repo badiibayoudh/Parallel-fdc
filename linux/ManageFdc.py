@@ -368,7 +368,7 @@ def printConfig():
 
 def loadConfig():
     global settings
-    settings = config.read_yaml_properties("application_t3_prd.yml")
+    settings = config.read_yaml_properties("application_t3_crm.yml")
     
     #test
     print(settings)

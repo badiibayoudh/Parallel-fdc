@@ -13,16 +13,12 @@ workflow:
 
 fdc:
     file_download_client_home: ${FDC_HOME}
-    environment_to_connect: 'PROD'
-    # Uncomment the following for old credentials:
-    # USERPID: 'pid5457'
+    environment_to_connect: 'TI'
     userpid: 'pid1489'
-    credentials: ${FDC_CREDENTIALS_FILE}
-    #'/applications/asplm/asplmt3/security/fdc/encrypted_cred.txt'
-    # Uncomment this line for production credentials:
-    # CREDENTIALS: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/secure/EncryptedCred_PROD.txt'
+    # credentials: ${FDC_CREDENTIALS_FILE}
+    credentials: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/secure/EncryptedCred_INT.txt'
     xml_input_directory: ${FDC_CONF_DIR}
-    # XML_INPUT_DIRECTORY: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/config_PRD/'
+    # XML_INPUT_DIRECTORY: '/applications/asplm/asplmt3/cust_root_dir/cdm_importer/fdc/config_CRM/'
     status_check_interval: 1
     fdc_map: '/mounts/import/cdm/MAP_fdc'
     java_path: ${JAVA_HOME}
