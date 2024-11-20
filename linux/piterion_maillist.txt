@@ -1,0 +1,11 @@
+###############################################################################
+## E-mail list for CDM Importer
+##
+## Inform the e-mail addresses in the following format:
+##
+##    to_addresses=one or more comma-separated recipient addresses
+##    cc_addresses=one or more comma-separated CC addresses
+###############################################################################
+to_addresses=badii.bayoudh@piterion.com
+#to_addresses=rafael.konig@t-systems.com
+cc_addresses=badii.bayoudh@gmail.com

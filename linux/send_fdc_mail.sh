@@ -57,6 +57,7 @@ GDU AMI | GDC PLM | Product Lifecycle Services
 send_mime_mail()
 {
     emailfile="/var/tmp/${script_name}.${$}.eml"
+
     get_mime_content "${*}"
     m_info "Sending E-Mail $mime_recipients with $mime_cc"
 
@@ -92,16 +93,16 @@ EOM
 
     # Encode attachments.
 
-    filename="${fdc_log}"
+    #filename="${fdc_log}"
+    filename="$(basename $fdc_log)"
     echo "${nl}--$mime_boundary" >> "$emailfile"
     echo "${nl}Content-Transfer-Encoding: base64" >> "$emailfile"
     echo "${nl}Content-Type: application/octet-stream; name=$filename" >> "$emailfile"
     echo "${nl}${nl}" >> "$emailfile"
-    base64 $attachment >> "$emailfile"
+    base64 $fdc_log >> "$emailfile"
     echo "${nl}" >> "$emailfile"
   
     echo "--$mime_boundary--" >> "$emailfile"
-
     /usr/sbin/sendmail -t < "$emailfile"
     rm "$emailfile"
 }
@@ -131,6 +132,7 @@ echo -n "Usage: $0 [options]
 
 sendFdcMail()
 {
+
   lockfile="/var/tmp/$(basename $0).lockfile"
 
   # Check if this script is already running.
@@ -157,7 +159,8 @@ sendFdcMail()
   m_info "Script execution finished."
 }
 
-# Read the arguments and do stuff
+# Read the arguments and start
+
 if (($#)); then
   for arg in "$@"
     do

@@ -49,11 +49,12 @@ def execute_shell_script(script_path, config_name, log_path, mailing_list):
     :param log_path: Pfad zur Logdatei (als Argument für das Skript)
     :return: tuple (stdout, stderr, returncode)
     """
+    command = ["bash", script_path, "--fdc_config", config_name, "--fdc_log", log_path, "--mail", mailing_list]
+    logger.debug("Run mail command: {}".format(command))
+    
     try:
         result = subprocess.run(
-            ["bash", script_path, "--fdc_config", config_name, "--fdc_log", log_path, "--mail", mailing_list],
-            capture_output=True,
-            text=True,
+            command,
             check=False
         )
         return result.stdout, result.stderr, result.returncode
@@ -68,14 +69,18 @@ def sendMail(configFileName):
         exit
 
     configName, logFilePath = defineLogPath(configFileName)
+    logger.debug('log File folder path: {}'.format(logFilePath))
+    last_log = getLatestLog(logFilePath)
+    logger.debug('last log to be sent in email: {}'.format(last_log))
+
     fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
     #environment = settings["fdc"]["environment_to_connect"]
-    
-    if not os.path.isfile(fdcLogFilePath):
-        logger.error('Path of FDC User log file is not found: {}'.format(fdcLogFilePath))
+
+    if not os.path.isfile(last_log):
+        logger.error('Path of FDC User log file is not found: {}'.format(last_log))
         exit
-    
-    stdout, stderr, returncode = execute_shell_script("send_fdc_mail.sh", configName, logFilePath, settings["workflow"]["mailing"]["mailing_list"])
+
+    stdout, stderr, returncode = execute_shell_script("send_fdc_mail.sh", configName, last_log, settings["workflow"]["mailing"]["mailing_list"])
 
     if returncode == 0:
         logger.debug("Email script successfully executed!")
@@ -158,7 +163,7 @@ def runClientInt(configFileName):
     downloadArgs2 ='--inputFileLocation=' + configFilePath
     logger.info('downloadArgs:  {} , {} \n'.format(downloadArgs1, downloadArgs2))
     
-    javaCmd = os.path.join(settings["fdc"]["java_path"], 'java')
+    javaCmd = os.path.join(settings["fdc"]["java_path"], 'bin', 'java')
     fdcClientPath = os.path.join(settings["fdc"]["file_download_client_home"], 'fdc.jar')
     
     command = [javaCmd, '-Dfile.encoding=UTF-8', '-jar', fdcClientPath, 'download_mode', downloadArgs1, downloadArgs2]
@@ -331,7 +336,7 @@ def main():
     # clean & archive monitoring reports
     cleaner.archive_and_cleanup(settings["workflow"]["monitoring_path"], settings["workflow"]["archive_path"])
     # clean & archive fdc logs
-    cleaner.archive_and_cleanup(settings["log_output"], settings["workflow"]["archive_path"], True, True)
+    cleaner.archive_and_cleanup(settings["log_output"], settings["workflow"]["archive_path"], 30, 120, True, True)
     # clean & archive cronjob logs
     cleaner.archive_and_cleanup(settings["log_output"], settings["workflow"]["archive_path"], 3, 7, False, True)
     
@@ -368,12 +373,10 @@ def printConfig():
 
 def loadConfig():
     global settings
-    settings = config.read_yaml_properties("application_t3_crm.yml")
+    settings = config.load_config_with_env_required("application.yml")
     
     #test
-    print(settings)
-    
-    print(settings["fdc"]["userpid"])
+    #print(settings)
      
 def initLog():
     fdcMnglogDir = os.path.join(settings["log_output"], "fdc_manager")

@@ -98,10 +98,13 @@ def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV, FdcConfi
     for dir_name, _, _ in os.walk(FdcLogRootDir):
         job_log_dir = dir_name
         if os.path.isfile(os.path.join(job_log_dir, "FDCUserLog.txt")):
+            logger.debug(f"FDCUserLog.txt found in {job_log_dir}")
+
             job_name = os.path.basename(job_log_dir)
 
             # SMA-291: Bei der Erstellung der Monitoring-Datei werden nur FDC.logs berücksichtigt, zu welchen ein Konfig.xml vorhanden.
             if not job_name in all_configs:
+                logger.debug(f"Log dir {job_log_dir} is skipped because job name {job_name} it is not found in {all_configs}")
                 continue
             
             start_time_string = get_last_mod_time_of_file(os.path.join(job_log_dir, "FDC.START"))
@@ -128,7 +131,7 @@ def generateReport(FdcLogRootDir, FdcRuntimeCSV, FdcRunningJobCountCSV, FdcConfi
             with open(FdcRuntimeCSV, 'a', newline='') as file:
                 file.write(csv_line + '\n')
         else:
-            logger.info(f"No FDCUserLog.txt found in {job_log_dir} -> Skipping!")
+            logger.debug(f"No FDCUserLog.txt found in {job_log_dir} -> Skipping!")
 
     running_job_count_hash = {}
     first_start_time = min(jobs_by_start_time_hash.keys())
