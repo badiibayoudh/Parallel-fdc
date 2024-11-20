@@ -11,6 +11,7 @@ workflow:
   monitoring_path: '/applications/logs/fdc/monitoring'
   archive_path: '/applications/logs/fdc/archive'
   max_processes: 15
+  simulate: true
 
 fdc:
   file_download_client_home: ${FDC_HOME}

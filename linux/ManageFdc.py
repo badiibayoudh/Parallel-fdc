@@ -133,6 +133,9 @@ def isJTsSucessfullyDownloaded(configFileName):
 
     
 def runClientInt(configFileName):
+    if settings["workflow"]["plmxml"]["move"]:
+        (configFileName, SUCCESS)
+        
     configName, logFilePath = defineLogPath(configFileName)
     
     fdcLogFilePath = os.path.join(logFilePath, 'FDCUserLog.txt')
@@ -270,9 +273,11 @@ def main():
 
     pool = ThreadPool(processes=settings["workflow"]["max_processes"])
     
+    logger.debug(f"Sorted xml files in directory '{settings["fdc"]["xml_input_directory"]}' are '{list_xml_files_sorted(settings["fdc"]["xml_input_directory"])}'.")
+    
     # SMA-291 Das Starten der FDC-Jobs soll anhand der Namen sortiert nach A-Z erfolgen.
     for filename in list_xml_files_sorted(settings["fdc"]["xml_input_directory"]):
-    #for filename in os.listdir(settings["fdc"]["xml_input_directory"]):
+        logger.debug(f"The import with config '{filename}' is added to pool.")
         f = os.path.join(settings["fdc"]["xml_input_directory"], filename)
         # checking if it is a file
         if os.path.isfile(f):
@@ -311,6 +316,9 @@ def main():
     # wait that all subropresses are finished
     pool.join()    
     
+    if settings["workflow"]["simulate"]:
+        exit
+        
     logger.info("############################################")
     logger.info("# Retry execution Report:")
     for r in result_retry:
@@ -382,8 +390,11 @@ def initLog():
     fdcMnglogDir = os.path.join(settings["log_output"], "fdc_manager")
     if not os.path.exists(fdcMnglogDir):
         os.makedirs(fdcMnglogDir)
+        
     fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager.log'))
     
+    if settings["workflow"]["simulate"]:
+        fdcMnglogFile = os.path.normpath(os.path.join(fdcMnglogDir, 'fdc_manager_simulation.log'))
     
     logger.debug('FDC-Manager log file path:  {} \n'.format(fdcMnglogFile))
     
