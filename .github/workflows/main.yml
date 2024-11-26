@@ -12,10 +12,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to T3
-        env:
-          SERVER_IP: ${{ secrets.T3_SERVER_IP }}
-          SSH_USER: ${{ secrets.T3_SSH_USER }}
         run: |
           echo "Deploying to T3 server..."
-          scp -i ${{ secrets.SSH_KEY }} -r ./* $SSH_USER@$SERVER_IP:/path/to/deploy/
-          ssh -i ${{ secrets.SSH_KEY }} $SSH_USER@$SERVER_IP "bash /path/to/deploy/setup.sh"
+        #env:
+          #SERVER_IP: ${{ secrets.T3_SERVER_IP }}
+          #SSH_USER: ${{ secrets.T3_SSH_USER }}
+        #run: |
+          #echo "Deploying to T3 server..."
+          #scp -i ${{ secrets.SSH_KEY }} -r ./* $SSH_USER@$SERVER_IP:/path/to/deploy/
+          #ssh -i ${{ secrets.SSH_KEY }} $SSH_USER@$SERVER_IP "bash /path/to/deploy/setup.sh"
