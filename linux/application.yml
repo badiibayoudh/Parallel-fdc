@@ -30,5 +30,4 @@ fdc:
   status_check_interval: 1
   fdc_map: '/mounts/import/cdm/VISVIEW/MAP_fdc'
   java_path: ${JAVA_HOME}
-  # java_path: '/applications/asplm/asplmint/java/jdk17/bin/'
 
