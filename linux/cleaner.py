@@ -1,7 +1,7 @@
 import os
 import time
 import tarfile
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import logging
 logger = logging.getLogger('fdc_Manager')
@@ -85,7 +85,7 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
         #for filename in os.listdir(directory):
         for file_path in files:
             if onlyLog:
-                if not (file_path.endswith('.log') or file_path.startswith('fdc_manager.log')):
+                if not (file_path.endswith('.log') or file_path.startswith('fdc_manager')):
                     continue
                     
             #file_path = os.path.join(directory, filename)
@@ -117,3 +117,51 @@ def archive_and_cleanup(directory, archive_dir, days_to_archive=30, days_to_dele
             if archived_file_age > days_to_delete:
                 os.remove(archived_file_path)
                 logger.info(f"Deleted: {archived_file}")
+
+
+def archive_leaf_directories(base_dir, excluded_names, archive_dir):
+    """
+    Archiviert Leaf-Unterverzeichnisse eines Verzeichnisses, deren Namen nicht in der Ausnahmeliste enthalten sind.
+    Leere Verzeichnisse werden gelöscht. Archive, die älter als 120 Tage sind, werden entfernt.
+
+    :param base_dir: Pfad zum Hauptverzeichnis
+    :param excluded_names: Liste der Unterverzeichnisnamen, die NICHT archiviert werden sollen
+    :param archive_dir: Zielverzeichnis für die Archive
+    """
+    # Überprüfen, ob das Archivverzeichnis existiert, ansonsten erstellen
+    if not os.path.exists(archive_dir):
+        os.makedirs(archive_dir)
+
+    # Funktion, um leere Verzeichnisse zu löschen
+    def delete_empty_directories(path):
+        for root, dirs, _ in os.walk(path, topdown=False):
+            for dir_name in dirs:
+                dir_path = os.path.join(root, dir_name)
+                if not os.listdir(dir_path):  # Verzeichnis ist leer
+                    ####os.rmdir(dir_path)
+                    logger.info(f"Leeres Verzeichnis gelöscht: {dir_path}")
+
+    # Rekursive Suche nach Leaf-Unterverzeichnissen und Archivierung
+    for root, dirs, _ in os.walk(base_dir, topdown=False):
+        if not dirs:  # Nur Leaf-Verzeichnisse
+            leaf_name = os.path.basename(root)
+            if leaf_name not in excluded_names:
+                archive_name = os.path.join(
+                    archive_dir, f"{leaf_name}_{datetime.now().strftime('%Y%m%d')}.tar.gz"
+                )
+                ###with tarfile.open(archive_name, "w:gz") as tar:
+                ###    tar.add(root, arcname=leaf_name)
+                logger.info(f"Archiv erstellt: {archive_name}")
+
+    # Alte Archive nach 120 Tagen löschen
+    expiration_date = datetime.now() - timedelta(days=120)
+    for archive_file in os.listdir(archive_dir):
+        archive_path = os.path.join(archive_dir, archive_file)
+        if os.path.isfile(archive_path):
+            creation_time = datetime.fromtimestamp(os.path.getmtime(archive_path))
+            if creation_time < expiration_date:
+                os.remove(archive_path)
+                logger.info(f"Archiv gelöscht: {archive_path}")
+
+    # Leere Verzeichnisse löschen
+    delete_empty_directories(base_dir)

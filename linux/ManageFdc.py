@@ -42,11 +42,11 @@ logger = logging.getLogger('fdc_Manager')
 
 def execute_shell_script(script_path, config_name, log_path, mailing_list):
     """
-    Führt ein Shell-Skript mit den angegebenen Argumenten aus.
+    FÃƒÂ¼hrt ein Shell-Skript mit den angegebenen Argumenten aus.
     
     :param script_path: Pfad zum Shell-Skript
-    :param config_name: Name der Konfiguration (als Argument für das Skript)
-    :param log_path: Pfad zur Logdatei (als Argument für das Skript)
+    :param config_name: Name der Konfiguration (als Argument fÃƒÂ¼r das Skript)
+    :param log_path: Pfad zur Logdatei (als Argument fÃƒÂ¼r das Skript)
     :return: tuple (stdout, stderr, returncode)
     """
     command = ["bash", script_path, "--fdc_config", config_name, "--fdc_log", log_path, "--mail", mailing_list]
@@ -61,7 +61,7 @@ def execute_shell_script(script_path, config_name, log_path, mailing_list):
     except FileNotFoundError:
         raise Exception(f"Das Shell-Skript {script_path} wurde nicht gefunden.")
     except Exception as e:
-        raise Exception(f"Fehler beim Ausführen des Shell-Skripts: {str(e)}")
+        raise Exception(f"Fehler beim AusfÃƒÂ¼hren des Shell-Skripts: {str(e)}")
     
 def sendMail(configFileName):
     if not settings["workflow"]["mailing"]["mail"]:
@@ -133,8 +133,8 @@ def isJTsSucessfullyDownloaded(configFileName):
 
     
 def runClientInt(configFileName):
-    if settings["workflow"]["plmxml"]["move"]:
-        (configFileName, SUCCESS)
+    if settings["workflow"]["simulate"]:
+        return (configFileName, SUCCESS)
         
     configName, logFilePath = defineLogPath(configFileName)
     
@@ -265,6 +265,11 @@ def list_xml_files_sorted(directory):
     except PermissionError:
         logger.info(f"Access to directory '{directory}' is not allowed.")
         return []
+
+def xml_dateinamen_auflisten(verzeichnis):
+    """Listet die Namen aller .xml-Dateien ohne Extension in einem Verzeichnis auf."""
+    dateinamen = [os.path.splitext(datei)[0] for datei in os.listdir(verzeichnis) if datei.endswith('.xml')]
+    return dateinamen
     
 def main():
     
@@ -272,8 +277,11 @@ def main():
     result_final=[]
 
     pool = ThreadPool(processes=settings["workflow"]["max_processes"])
-    
-    logger.debug(f"Sorted xml files in directory '{settings["fdc"]["xml_input_directory"]}' are '{list_xml_files_sorted(settings["fdc"]["xml_input_directory"])}'.")
+   
+    d = settings["fdc"]["xml_input_directory"]
+    l= list_xml_files_sorted(settings["fdc"]["xml_input_directory"])
+
+    logger.debug(f"Sorted xml files in directory '{d}' are '{l}'.")
     
     # SMA-291 Das Starten der FDC-Jobs soll anhand der Namen sortiert nach A-Z erfolgen.
     for filename in list_xml_files_sorted(settings["fdc"]["xml_input_directory"]):
@@ -316,8 +324,8 @@ def main():
     # wait that all subropresses are finished
     pool.join()    
     
-    if settings["workflow"]["simulate"]:
-        exit
+    #if settings["workflow"]["simulate"]:
+    #    sys.exit()
         
     logger.info("############################################")
     logger.info("# Retry execution Report:")
@@ -332,15 +340,11 @@ def main():
         logger.info('\n -- Send mail because of failed import with the configuration: {} --'.format(filename))
         sendMail(filename)
 
-    logger.info("\n-- Generate monitoring Report:")
-    if createDirectory(settings["workflow"]["monitoring_path"]):
-        fdcRuntimeFilePath = os.path.join(settings["workflow"]["monitoring_path"], f"FDC-Runtime_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-        fdcRunningJobFilePath = os.path.join(settings["workflow"]["monitoring_path"], f"FDC-RunningJobCount_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-        reporter.generateReport(settings["log_output"], fdcRuntimeFilePath, fdcRunningJobFilePath, settings["fdc"]["xml_input_directory"])
-    else:
-        logger.error(f"Monitorng Report could not be generated because of missing target folder")
-    
     logger.info("\n-- Archiving & Cleanup")
+    
+    # archive Folder without logs
+    cleaner.archive_leaf_directories(settings["log_output"], xml_dateinamen_auflisten(settings["fdc"]["xml_input_directory"]) ,settings["workflow"]["archive_path"])
+    
     # clean & archive monitoring reports
     cleaner.archive_and_cleanup(settings["workflow"]["monitoring_path"], settings["workflow"]["archive_path"])
     # clean & archive fdc logs
@@ -348,15 +352,23 @@ def main():
     # clean & archive cronjob logs
     cleaner.archive_and_cleanup(settings["log_output"], settings["workflow"]["archive_path"], 3, 7, False, True)
     
-    # SMA-291: Bereinigung des Staging-Verzeichnisses von FDC-PLMXMLsL:  ältere FDC PLMXML-Dateien die älter als 30-Tage sind werden im FDC-PLMXML Downloadverzeichnis gelöscht (/mounts/import/cdm/VISVIEW/AS-PLM_fdc)
+    # SMA-291: Bereinigung des Staging-Verzeichnisses von FDC-PLMXMLsL:  ÃƒÂ¤ltere FDC PLMXML-Dateien die ÃƒÂ¤lter als 30-Tage sind werden im FDC-PLMXML Downloadverzeichnis gelÃƒÂ¶scht (/mounts/import/cdm/VISVIEW/AS-PLM_fdc)
     # clean old plmxml
     cleaner.deleteFiles(settings["workflow"]["plmxml"]["move_from"])
     # clean old FDC map
     cleaner.deleteFiles(settings["fdc"]["fdc_map"])
+    
+    logger.info("\n-- Generate monitoring Report:")
+    if createDirectory(settings["workflow"]["monitoring_path"]):
+        fdcRuntimeFilePath = os.path.join(settings["workflow"]["monitoring_path"], f"FDC-Runtime_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        fdcRunningJobFilePath = os.path.join(settings["workflow"]["monitoring_path"], f"FDC-RunningJobCount_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        reporter.generateReport(settings["log_output"], fdcRuntimeFilePath, fdcRunningJobFilePath, settings["fdc"]["xml_input_directory"])
+    else:
+        logger.error(f"Monitorng Report could not be generated because of missing target folder")
 
 def createDirectory(pfad):
     try:
-        # Prüfen, ob das Verzeichnis bereits existiert
+        # PrÃƒÂ¼fen, ob das Verzeichnis bereits existiert
         if not os.path.exists(pfad):
             # Erstellen des Verzeichnisses
             os.makedirs(pfad)
@@ -432,3 +444,4 @@ if __name__ == '__main__':
     logger.info("# END: {}".format(endTime))
     logger.info("# Download took time:" + str((endTime - startTime).total_seconds()))
     logger.info("############################################\n")
+
