@@ -1,0 +1,21 @@
+name: Deploy to INT
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  deploy_t3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Deploy to INT
+        run: |
+          echo "Deploying to T3 server..."
+        #env:
+          #SERVER_IP: ${{ secrets.T3_SERVER_IP }}
+          #SSH_USER: ${{ secrets.T3_SSH_USER }}
+        #run: |
+          #echo "Deploying to T3 server..."
+          #scp -i ${{ secrets.SSH_KEY }} -r ./* $SSH_USER@$SERVER_IP:/path/to/deploy/
+          #ssh -i ${{ secrets.SSH_KEY }} $SSH_USER@$SERVER_IP "bash /path/to/deploy/setup.sh"
