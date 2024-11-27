@@ -14,5 +14,4 @@ fi
 
 export PYTHONPATH=/applications/asplm/asplmint/cust_root_dir/cdm_importer/fdc/pyyaml-6.0.2/lib:$PYTHONPATH
 
-printf ${FDC_HOME}/ManageFdc.py
 python3 ${FDC_HOME}/ManageFdc.py
