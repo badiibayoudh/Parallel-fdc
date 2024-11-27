@@ -1,4 +1,4 @@
-name: Deploy to INT  a
+name: Deploy to INT
 on:
   workflow_dispatch: # Manual trigger
 
@@ -8,14 +8,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-
-      - name: Deploy to INT  b
+      - name: Deploy to server
+        env:
+          SERVER_IP: ${{ secrets.TSERVER_IP }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          PATH_DEPLOY: ${{ vars.PATH_DEPLOY }}
         run: |
-          echo "Deploying to INT server..."
-        #env:
-          #SERVER_IP: ${{ secrets.T3_SERVER_IP }}
-          #SSH_USER: ${{ secrets.T3_SSH_USER }}
-        #run: |
-          #echo "Deploying to T3 server..."
+          echo "Deploying on server $SERVER_IP to the path PATH_DEPLOY ... "
           #scp -i ${{ secrets.SSH_KEY }} -r ./* $SSH_USER@$SERVER_IP:/path/to/deploy/
           #ssh -i ${{ secrets.SSH_KEY }} $SSH_USER@$SERVER_IP "bash /path/to/deploy/setup.sh"
