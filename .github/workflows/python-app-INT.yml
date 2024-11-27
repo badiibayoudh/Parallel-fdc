@@ -1,4 +1,4 @@
-name: Deploy to INT
+name: Ausrollen in INT
 on:
   workflow_dispatch: # Manual trigger
 
