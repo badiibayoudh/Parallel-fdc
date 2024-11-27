@@ -1,8 +1,9 @@
 name: Deploy to T3
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: # Manual trigger
+  #push:
+  #  branches:
+  #    - main
 
 jobs:
   deploy_t3:
