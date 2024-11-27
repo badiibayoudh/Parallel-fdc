@@ -3,7 +3,7 @@ on:
   workflow_dispatch: # Manual trigger
 
 jobs:
-  deploy_t3:
+  deploy_server:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
