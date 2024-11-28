@@ -6,7 +6,8 @@ on:
         description: 'Test scenario tags' 
 jobs:
   deploy_server:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+     runs-on: FDC_DEPLOY
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -15,6 +16,7 @@ jobs:
           SERVER_IP: ${{ secrets.TSERVER_IP }}
           SSH_USER: ${{ secrets.SSH_USER }}
           PATH_DEPLOY: ${{ vars.PATH_DEPLOY }}
+       
         run: |
           echo $SERVER_IP
           echo "Deploying on server $SERVER_IP to the path $PATH_DEPLOY ... "
