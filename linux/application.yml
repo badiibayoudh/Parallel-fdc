@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.1.5
 log_output: ${FDC_LOG_DIR}
 
 workflow:
