@@ -1,9 +1,7 @@
 name: Ausrollen in INT
 on:
   workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Test scenario tags'
+  
 jobs:
   deploy_server:
     #runs-on: ubuntu-latest
