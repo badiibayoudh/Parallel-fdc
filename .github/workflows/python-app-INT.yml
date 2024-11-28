@@ -7,7 +7,7 @@ on:
 jobs:
   deploy_server:
     #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
