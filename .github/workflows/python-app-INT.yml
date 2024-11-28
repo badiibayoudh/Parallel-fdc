@@ -20,6 +20,7 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
           PATH_DEPLOY: ${{ vars.PATH_DEPLOY }}
         run: |
+          echo $SERVER_IP
           echo "Deploying on server $SERVER_IP to the path $PATH_DEPLOY ... "
           #scp -i ${{ secrets.SSH_KEY }} -r ./* $SSH_USER@$SERVER_IP:$PATH_DEPLOY
           #ssh -i ${{ secrets.SSH_KEY }} $SSH_USER@$SERVER_IP "bash $PATH_DEPLOY/setup.sh"
