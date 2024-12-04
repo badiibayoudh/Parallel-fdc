@@ -27,7 +27,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: "$TARGET_FOLDER"
- 
+
+      - name: Set Script Permissions
+        run: |
+          SCRIPT_DIR="scripts"
+          SCRIPT_NAME="ManageFdc.sh"
+          chmod +x "$TARGET_FOLDER/$SCRIPT_NAME"
+          echo "Execution permissions set for $TARGET_FOLDER/$SCRIPT_NAME"
 
       #- name: Run the script
       #  run: |
