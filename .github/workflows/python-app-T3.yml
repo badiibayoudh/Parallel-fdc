@@ -8,18 +8,43 @@ jobs:
     runs-on: [self-hosted, linux]
     environment: T3
     steps:
+      # Backup the target folder (move its content to an archive)  
+      - name: Backup target folder
+        run: |
+          # Define paths for target folder and backup subfolder
+          TARGET_DIR="/application/fdc/t3"  # Replace with your target folder path
+          BACKUP_DIR="${TARGET_DIR}/backups"   # Subfolder inside the target folder for backups
+        
+          # Create the backups subfolder if it doesn't exist
+          mkdir -p "$BACKUP_DIR"
+        
+          # Delete backups older than 7 days
+          find "$BACKUP_DIR" -type f -name "*.tar.gz" -mtime +7 -exec rm -f {} \;
+        
+          # Generate a unique filename for the new backup using the current timestamp
+          TIMESTAMP=$(date +'%Y%m%d%H%M%S')
+          BACKUP_FILE="${BACKUP_DIR}/backup_${TIMESTAMP}.tar.gz"
+        
+          # Move all the content of TARGET_DIR to a backup archive (tarball)
+          tar -czf "$BACKUP_FILE" -C "$(dirname "$TARGET_DIR")" "$(basename "$TARGET_DIR")"
+        
+          echo "Backup created at: $BACKUP_FIL
       - name: Checkout Code
         uses: actions/checkout@v3
-      - name: Deploy to server
-        env:
-          SERVER_IP: ${{ secrets.TSERVER_IP }}
-          SSH_USER: ${{ secrets.SSH_USER }}
-          PATH_DEPLOY: ${{ vars.PATH_DEPLOY }}
-       
+      - name: Post actions
         run: |
-          echo $SERVER_IP
-          echo "Deploying on server $SERVER_IP to the path $PATH_DEPLOY ... "
-          scp -r ./linux/* $PATH_DEPLOY
+          echo "Dry on test"
+          ${TARGET_DIR}/ManageFdc.sh
+      #- name: Deploy to server
+       # env:
+       #   SERVER_IP: ${{ secrets.TSERVER_IP }}
+      #    SSH_USER: ${{ secrets.SSH_USER }}
+       #   PATH_DEPLOY: ${{ vars.PATH_DEPLOY }}
+       
+       # run: |
+          #echo $SERVER_IP
+          #echo "Deploying on server $SERVER_IP to the path $PATH_DEPLOY ... "
+          #scp -r ./linux/* $PATH_DEPLOY
           #$PATH_DEPLOY/deploy.sh
           #scp -i ${{ secrets.SSH_KEY }} -r ./linux/* $SSH_USER@$SERVER_IP:$PATH_DEPLOY
           #ssh -i ${{ secrets.SSH_KEY }} $SSH_USER@$SERVER_IP "bash $PATH_DEPLOY/setup.sh"
