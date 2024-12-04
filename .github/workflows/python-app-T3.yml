@@ -4,7 +4,7 @@ on:
   
 jobs:
   deploy_server:
-    runs-on: [self-hosted, linux, test3]
+    runs-on: [self-hosted, linux]
     #environment: T3
     env:
       TARGET_DIR: "/application/fdc/t3"
