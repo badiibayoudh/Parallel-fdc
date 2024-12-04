@@ -28,7 +28,7 @@ jobs:
           # Move all the content of TARGET_DIR to a backup archive (tarball)
           tar -czf "$BACKUP_FILE" -C "$(dirname "$TARGET_DIR")" "$(basename "$TARGET_DIR")"
         
-          echo "Backup created at: $BACKUP_FIL
+          echo "Backup created at: $BACKUP_FIL"
       - name: Checkout Code
         uses: actions/checkout@v3
       - name: Post actions
