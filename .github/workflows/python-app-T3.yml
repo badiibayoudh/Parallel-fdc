@@ -23,7 +23,11 @@ jobs:
       - name: Clean Up Old Backups
         run: |
           find "$TARGET_FOLDER/Backup" -type f -name "*.tar.gz" -mtime +3 -exec rm -f {} \;
-
+      
+      - name: Clean target folder excluding "Backup" and its content
+        run: |
+          find "$TARGET_FOLDER" -mindepth 1 -maxdepth 1 ! -name "Backup" -exec rm -rf {} +
+          
       - name: Checkout Source Code
         uses: actions/checkout@v3
         with:
