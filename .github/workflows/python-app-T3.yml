@@ -27,15 +27,14 @@ jobs:
       - name: Clean target folder excluding "Backup" and its content
         run: |
           find "$TARGET_FOLDER" -mindepth 1 -maxdepth 1 ! -name "Backup" -exec rm -rf {} +
-
-      - name: Set target folder environment variable
-        run: echo "TARGET_FOLDER=$TARGET_FOLDER" >> $GITHUB_ENV
         
       - name: Checkout Source Code
         uses: actions/checkout@v3
-        with:
-          path: ${{ env.TARGET_FOLDER }}
 
+      - name: Move code to folder
+        run: |
+          mv * $TARGET_FOLDER
+          
       - name: Set Script Permissions
         run: |
           SCRIPT_DIR="scripts"
