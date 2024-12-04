@@ -17,11 +17,11 @@ jobs:
         run: |
           TIMESTAMP=$(date +"%Y%m%d%H%M%S")
           BACKUP_PATH="$TARGET_FOLDER/Backup/archive_$TIMESTAMP.tar.gz"
-          tar --exclude="$TARGET_FOLDER/Backup" -czf "$BACKUP_PATH" -C "$TARGET_FOLDER" .
+          tar --exclude="$TARGET_FOLDER/Backup" --exclude="$TARGET_FOLDER/Backup/*" --exclude="$TARGET_FOLDER/.*" -czf "$BACKUP_PATH" -C "$TARGET_FOLDER" .
 
       - name: Clean Up Old Backups
         run: |
-          find "$TARGET_FOLDER/Backup" -type f -name "*.tar.gz" -mtime +7 -exec rm -f {} \;
+          find "$TARGET_FOLDER/Backup" -type f -name "*.tar.gz" -mtime +3 -exec rm -f {} \;
 
       - name: Checkout Source Code
         uses: actions/checkout@v3
