@@ -7,34 +7,27 @@ jobs:
     runs-on: [self-hosted, linux]
     #environment: T3
     env:
-      TARGET_DIR: "/application/fdc/t3"
+      TARGET_FOLDER: "/application/fdc/t3"
     steps:
-      # Backup the target folder (move its content to an archive)  
-      - name: Backup target folder
+      - name: Create Backup Directory
         run: |
-          BACKUP_DIR="${TARGET_DIR}/backups"   # Subfolder inside the target folder for backups
-        
-          # Create the backups subfolder if it doesn't exist
-          mkdir -p "$BACKUP_DIR"
-        
-          # Delete backups older than 7 days
-          find "$BACKUP_DIR" -type f -name "*.tar.gz" -mtime +7 -exec rm -f {} \;
-        
-          # Generate a unique filename for the new backup using the current timestamp
-          TIMESTAMP=$(date +'%Y%m%d%H%M%S')
-          BACKUP_FILE="${BACKUP_DIR}/backup_${TIMESTAMP}.tar.gz"
-        
-          # Move all the content of TARGET_DIR to a backup archive (tarball)
-          tar -czf "$BACKUP_FILE" -C "$(dirname "$TARGET_DIR")" "$(basename "$TARGET_DIR")"
-        
-          echo "Backup created at: $BACKUP_FIL"
-      - name: Checkout Code
+          mkdir -p "$TARGET_FOLDER/Backup"
+
+      - name: Archive Current Content (Excluding Backups)
+        run: |
+          TIMESTAMP=$(date +"%Y%m%d%H%M%S")
+          BACKUP_PATH="$TARGET_FOLDER/Backup/archive_$TIMESTAMP.tar.gz"
+          tar --exclude="$TARGET_FOLDER/Backup" -czf "$BACKUP_PATH" -C "$TARGET_FOLDER" .
+
+      - name: Clean Up Old Backups
+        run: |
+          find "$TARGET_FOLDER/Backup" -type f -name "*.tar.gz" -mtime +7 -exec rm -f {} \;
+
+      - name: Checkout Source Code
         uses: actions/checkout@v3
-      - name: Set execute permissions
-        run: |
-          entryPointPath="${{ TARGET_DIR }}/ManageFdc.sh"
-          echo "Running script : $entryPointPath"
-          chmod +x entryPointPath  
+        with:
+          path: "$TARGET_FOLDER"
+ 
 
       #- name: Run the script
       #  run: |
