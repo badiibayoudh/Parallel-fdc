@@ -29,7 +29,7 @@ jobs:
           find "$TARGET_FOLDER" -mindepth 1 -maxdepth 1 ! -name "Backup" -exec rm -rf {} +
 
       - name: Set target folder environment variable
-        run: echo "$TARGET_FOLDER" >> $GITHUB_ENV
+        run: echo "TARGET_FOLDER=$TARGET_FOLDER" >> $GITHUB_ENV
         
       - name: Checkout Source Code
         uses: actions/checkout@v3
