@@ -37,8 +37,7 @@ jobs:
           
       - name: Set Script Permissions
         run: |
-          SCRIPT_DIR="scripts"
-          SCRIPT_NAME="ManageFdc.sh"
+          SCRIPT_NAME="linux/ManageFdc.sh"
           chmod +x "$TARGET_FOLDER/$SCRIPT_NAME"
           echo "Execution permissions set for $TARGET_FOLDER/$SCRIPT_NAME"
 
